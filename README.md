@@ -7,7 +7,7 @@ Mini bibliotheque en C avec SQLite3, pour le compte du TP2 de classe - Programma
   
   `cd biblio`
   
-  Changez le chemin vers le fichier Database `DB_FILE` dans `lib/sqlite3_client.c`
+  Changer le chemin vers le fichier Database `DB_FILE` dans `lib/sqlite3_client.c`
 - SQLite3 : 
   `sudo apt-get install -y sqlite3`
 - libSQLite3-dev
