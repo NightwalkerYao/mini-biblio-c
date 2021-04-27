@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="dd/d72/structft__border__chars" kind="struct" language="C++" prot="public">
+    <compoundname>ft_border_chars</compoundname>
+    <includes refid="d4/d2e/fort_8h" local="no">fort.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/d72/structft__border__chars_1ab7b5f8993a642dc2fdd0d8def9789502" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* top_border_ch</definition>
+        <argsstring></argsstring>
+        <name>top_border_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="689" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d72/structft__border__chars_1af018595a39f8cfd750f2364ac7a20c5d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* separator_ch</definition>
+        <argsstring></argsstring>
+        <name>separator_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="690" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d72/structft__border__chars_1aff7c70245cdbc36c6c1af8da5cd95333" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* bottom_border_ch</definition>
+        <argsstring></argsstring>
+        <name>bottom_border_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="691" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d72/structft__border__chars_1a17783add57d7bca171967cac3dcb0f20" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* side_border_ch</definition>
+        <argsstring></argsstring>
+        <name>side_border_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="692" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="692" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d72/structft__border__chars_1a4eeac7b14fc8f4ac59ef2e3de14264d4" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* out_intersect_ch</definition>
+        <argsstring></argsstring>
+        <name>out_intersect_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="693" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/d72/structft__border__chars_1a36d990167b38a72aa0c3dcdd9bd8472c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* in_intersect_ch</definition>
+        <argsstring></argsstring>
+        <name>in_intersect_ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="694" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure describing border appearance. </para>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="688" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="688" bodyend="695"/>
+    <listofallmembers>
+      <member refid="dd/d72/structft__border__chars_1aff7c70245cdbc36c6c1af8da5cd95333" prot="public" virt="non-virtual"><scope>ft_border_chars</scope><name>bottom_border_ch</name></member>
+      <member refid="dd/d72/structft__border__chars_1a36d990167b38a72aa0c3dcdd9bd8472c" prot="public" virt="non-virtual"><scope>ft_border_chars</scope><name>in_intersect_ch</name></member>
+      <member refid="dd/d72/structft__border__chars_1a4eeac7b14fc8f4ac59ef2e3de14264d4" prot="public" virt="non-virtual"><scope>ft_border_chars</scope><name>out_intersect_ch</name></member>
+      <member refid="dd/d72/structft__border__chars_1af018595a39f8cfd750f2364ac7a20c5d" prot="public" virt="non-virtual"><scope>ft_border_chars</scope><name>separator_ch</name></member>
+      <member refid="dd/d72/structft__border__chars_1a17783add57d7bca171967cac3dcb0f20" prot="public" virt="non-virtual"><scope>ft_border_chars</scope><name>side_border_ch</name></member>
+      <member refid="dd/d72/structft__border__chars_1ab7b5f8993a642dc2fdd0d8def9789502" prot="public" virt="non-virtual"><scope>ft_border_chars</scope><name>top_border_ch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -8,7 +8,7 @@
 #ifndef _SQLITE3_CLIENT_
 #define _SQLITE3_CLIENT_
 
-const char* DB_FILE = "/home/nightwalker/Class/C_Adv/TP/biblio/Database.db";
+const char* DB_FILE = "/home/nightwalker/Class/C_Adv/biblio/Database.db";
 
 void clear_buffer() {
   int c;

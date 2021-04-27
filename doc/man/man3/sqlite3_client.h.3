@@ -1,0 +1,99 @@
+.TH "/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" 3 "Mardi 27 Avril 2021" "Version 1.0.0" "La Mini-Biblio" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h \- Le client de test de la connectivite avec la base de donnees et les fonctions communes\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <sqlite3\&.h>\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "void \fBclear_buffer\fP (void)"
+.br
+.ti -1c
+.RI "char * \fBtrim\fP (char *)"
+.br
+.ti -1c
+.RI "sqlite3 * \fBconnect\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBDB_FILE\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+Le client de test de la connectivite avec la base de donnees et les fonctions communes\&. 
+
+
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBAuteur\fP
+.RS 4
+\fCKOUASSI Yao Kan\fP 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25 Avril 2021 
+.RE
+.PP
+
+.PP
+Définition dans le fichier \fBsqlite3_client\&.h\fP\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "void clear_buffer (void)"
+Nettoie le tampon apres un appel \fCscanf\fP 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Définition à la ligne 13 du fichier sqlite3_client\&.c\&.
+.SS "sqlite3 * connect (void)"
+
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+sqlite3* une instance de connexion SQLite3
+.RE
+.PP
+Teste la connectivite avec la base de donnees et affiche une alerte sur l'etat 
+.PP
+Définition à la ligne 36 du fichier sqlite3_client\&.c\&.
+.SH "Documentation des variables"
+.PP 
+.SS "const char * DB_FILE\fC [extern]\fP"
+Le chemin vers le fichier de base de donnees 
+.PP
+Définition à la ligne 11 du fichier sqlite3_client\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour La Mini-Biblio à partir du code source\&.

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "sqlite3_client.h": "c",
+        "add_adherent.h": "c",
+        "find_adherent.h": "c"
+    }
+}

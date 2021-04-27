@@ -1,0 +1,117 @@
+.TH "/home/nightwalker/Class/C_Adv/biblio/inc/main.h" 3 "Mardi 27 Avril 2021" "Version 1.0.0" "La Mini-Biblio" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/nightwalker/Class/C_Adv/biblio/inc/main.h \- Les prototypes des fonctions du point d'entrée du programme\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <sqlite3\&.h>\fP
+.br
+
+.SS "Fonctions"
+
+.in +1c
+.ti -1c
+.RI "int \fBfiglet\fP (void)"
+.br
+.RI "Affichage de la bannière au lancement du programme\&. "
+.ti -1c
+.RI "int \fBprint_menu\fP (void)"
+.br
+.RI "Affichage du menu principal du programme\&. "
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.RI "Le point d'entrée de l'application\&. "
+.in -1c
+.SH "Description détaillée"
+.PP 
+Les prototypes des fonctions du point d'entrée du programme\&. 
+
+
+.PP
+\fBVersion\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+\fBAuteur\fP
+.RS 4
+\fCKOUASSI Yao Kan\fP 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+25 Avril 2021
+.RE
+.PP
+Contient les prototypes des fonctions du \fBlib/main\&.c\fP 
+.PP
+Définition dans le fichier \fBmain\&.h\fP\&.
+.SH "Documentation des fonctions"
+.PP 
+.SS "int figlet (void)"
+
+.PP
+Affichage de la bannière au lancement du programme\&. Affiche un figlet (bannière) au démarrage du programme
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+int 0 
+.RE
+.PP
+
+.PP
+Définition à la ligne 24 du fichier main\&.c\&.
+.SS "main (int argc, char * argv[])"
+
+.PP
+Le point d'entrée de l'application\&. Présente l'application et gère les actions de l'utilisateur
+.PP
+\fBParamètres\fP
+.RS 4
+\fIargc\fP int Le nombre d'arguments+1 fournits à l'appel en ligne de commande 
+.br
+\fIargv\fP char** La liste des arguments fournits à l'appel en ligne de commande 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Définition à la ligne 62 du fichier main\&.c\&.
+.SS "int print_menu (void)"
+
+.PP
+Affichage du menu principal du programme\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIvoid\fP 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+int 0 
+.RE
+.PP
+
+.PP
+Définition à la ligne 38 du fichier main\&.c\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour La Mini-Biblio à partir du code source\&.

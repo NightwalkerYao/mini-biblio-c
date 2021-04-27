@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d3/d14/seed_8c" kind="file" language="C++">
+    <compoundname>seed.c</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">../inc/sqlite3_client.h</includes>
+    <includes refid="d6/d16/seed_8h" local="yes">../inc/seed.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>../inc/seed.h</label>
+        <link refid="d6/d16/seed_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../inc/sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/seed.c</label>
+        <link refid="d3/d14/seed_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="4">
+        <label>stdio.h</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d3/d14/seed_8c_1ab674c0b7c1e48e12c6009484a29a2d82" prot="public" static="no">
+        <name>_SEED_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c" line="9" column="9" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/d14/seed_8c_1ae5029c6714b7b77296aa2096b846b6be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c" line="11" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d14/seed_8c_1a78c8e327d0192e2a6c1df70828a86ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void seed</definition>
+        <argsstring>()</argsstring>
+        <name>seed</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enregistre des Livres et des Adherents predefinis, pour des raisons de test</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c" line="15" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c" bodystart="15" bodyend="66"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/sqlite3_client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/seed.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_SEED_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_SEED_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d6/d16/seed_8h_1ad8c8e513fc132a7e15a7879ad0e27ab8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d6/d16/seed_8h_1ad8c8e513fc132a7e15a7879ad0e27ab8" kindref="member">seed</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>sqlite3<sp/>*dbh;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*zErrMsg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rc;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>rc<sp/>=<sp/>sqlite3_open(<ref refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>,<sp/>&amp;dbh);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rc)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQLite3<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>sqlite3_errmsg(dbh));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*Query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>livres(id,<sp/>titre,<sp/>auteur,<sp/>editeur,<sp/>resume,<sp/>reference)<sp/>VALUES\</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Mastering<sp/>C<sp/>Programming<sp/>in<sp/>7<sp/>days&apos;,<sp/>&apos;Confused<sp/>Programer&apos;,<sp/>&apos;Packt<sp/>Pub&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;2366UT909&apos;),\</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;La<sp/>Ronde<sp/>Des<sp/>Jours&apos;,<sp/>&apos;Bernard<sp/>B.<sp/>Dadie&apos;,<sp/>&apos;CEDA&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;9870IU67&apos;),\</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Zadig<sp/>ou<sp/>la<sp/>Destinee&apos;,<sp/>&apos;Voltaire&apos;,<sp/>&apos;Belin&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;23124TY090&apos;),\</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Rebelle&apos;,<sp/>&apos;Fatou<sp/>Keita&apos;,<sp/>&apos;NEI&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;08757HG9&apos;),\</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Never<sp/>Trust<sp/>Anyone!&apos;,<sp/>&apos;Anonymous&apos;,<sp/>&apos;Unknown&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;9PYU67578&apos;),\</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Rui<sp/>Blas&apos;,<sp/>&apos;Victor<sp/>Hugo&apos;,<sp/>&apos;Nathan&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;9PYU67548&apos;),\</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Hamlet&apos;,<sp/>&apos;Shakespear&apos;,<sp/>&apos;Flamarion&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;956U67578&apos;),\</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;La<sp/>Voie<sp/>de<sp/>Ma<sp/>Rue&apos;,<sp/>&apos;Sylvain<sp/>Kean<sp/>Zo&apos;,<sp/>&apos;Valesse&apos;,<sp/>&apos;Lorem<sp/>ipsum<sp/>dolor<sp/>sit<sp/>amet,<sp/>consectetur<sp/>adipisicing<sp/>elit,<sp/>sed<sp/>do<sp/>eiusmod<sp/>tempor<sp/>incididunt<sp/>ut<sp/>labore<sp/>et<sp/>dolore<sp/>magna<sp/>aliqua.<sp/>Ut<sp/>enim<sp/>ad<sp/>minim<sp/>veniam,<sp/>quis<sp/>nostrud<sp/>exercitation<sp/>ullamco<sp/>laboris<sp/>nisi<sp/>ut<sp/>aliquip<sp/>ex<sp/>ea<sp/>commodo<sp/>consequat.&apos;,<sp/>&apos;9PYU67545&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;SQL<sp/>::<sp/>%s\n&quot;,<sp/>Query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Ajout<sp/>des<sp/>Livres...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>rc<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>callback,<sp/>0,<sp/>&amp;zErrMsg);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>rc<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>zErrMsg);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(zErrMsg);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stdout,<sp/></highlight><highlight class="stringliteral">&quot;\033[32mLivres<sp/>ajoutés<sp/>avec<sp/>succès<sp/>!\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>Query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>adherents(id,<sp/>nom,<sp/>contact,<sp/>adresse)<sp/>VALUES\</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Touré<sp/>Marie<sp/>Rose&apos;,<sp/>&apos;marie@rose.com&apos;,<sp/>&apos;545<sp/>Rue<sp/>du<sp/>commerce,<sp/>Plateau&apos;),\</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Kouadio<sp/>Louis&apos;,<sp/>&apos;07463242423&apos;,<sp/>&apos;Yopougon<sp/>Academie&apos;),\</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Sam<sp/>Smith&apos;,<sp/>&apos;0145353409&apos;,<sp/>&apos;66000<sp/>CEDEX<sp/>Paris&apos;),\</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Sanogo<sp/>Ahmed&apos;,<sp/>&apos;0589324242&apos;,<sp/>&apos;Adjamé<sp/>220<sp/>Logements&apos;),\</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Nanan<sp/>Leblanc&apos;,<sp/>&apos;05656423423&apos;,<sp/>&apos;BP<sp/>300<sp/>Issia&apos;),\</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Anabelle<sp/>Dupont&apos;,<sp/>&apos;03229787908&apos;,<sp/>&apos;Porte<sp/>du<sp/>Port,<sp/>Marseille&apos;),\</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Blé<sp/>Mathurin&apos;,<sp/>&apos;0753424240&apos;,<sp/>&apos;Bouaké<sp/>Air<sp/>France&apos;),\</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/>(NULL,<sp/>&apos;Digbeu<sp/>Steve&apos;,<sp/>&apos;04845352243&apos;,<sp/>&apos;KM<sp/>4<sp/>Bvd<sp/>Marseille<sp/>Treichville&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Ajout<sp/>des<sp/>Adhérents...\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>rc<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>callback,<sp/>0,<sp/>&amp;zErrMsg);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>rc<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>zErrMsg);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(zErrMsg);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stdout,<sp/></highlight><highlight class="stringliteral">&quot;\033[32mAdhérents<sp/>ajoutés<sp/>avec<sp/>succès<sp/>!\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>sqlite3_close(dbh);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/seed.c"/>
+  </compounddef>
+</doxygen>

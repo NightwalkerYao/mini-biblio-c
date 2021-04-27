@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>/home/nightwalker/Class/C_Adv/biblio/lib</compoundname>
+    <innerfile refid="d4/d28/add__adherent_8c">add_adherent.c</innerfile>
+    <innerfile refid="dc/d23/add__emprunt_8c">add_emprunt.c</innerfile>
+    <innerfile refid="d7/d17/add__livre_8c">add_livre.c</innerfile>
+    <innerfile refid="d6/dfc/back__emprunt_8c">back_emprunt.c</innerfile>
+    <innerfile refid="de/d2a/delete__adherent_8c">delete_adherent.c</innerfile>
+    <innerfile refid="da/dc5/delete__livre_8c">delete_livre.c</innerfile>
+    <innerfile refid="d2/d1b/find__adherent_8c">find_adherent.c</innerfile>
+    <innerfile refid="d6/d29/find__livre_8c">find_livre.c</innerfile>
+    <innerfile refid="d7/d68/fort_8c">fort.c</innerfile>
+    <innerfile refid="da/dfb/list__adherents_8c">list_adherents.c</innerfile>
+    <innerfile refid="d2/d83/list__emprunts_8c">list_emprunts.c</innerfile>
+    <innerfile refid="d9/d02/list__livres_8c">list_livres.c</innerfile>
+    <innerfile refid="d0/d29/main_8c">main.c</innerfile>
+    <innerfile refid="d3/d14/seed_8c">seed.c</innerfile>
+    <innerfile refid="d4/dd6/sqlite3__client_8c">sqlite3_client.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/"/>
+  </compounddef>
+</doxygen>

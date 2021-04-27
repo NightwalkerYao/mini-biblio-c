@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="da/d7e/structf__row" kind="struct" language="C++" prot="public">
+    <compoundname>f_row</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d7e/structf__row_1af69e5feee90fe03458ea6994bc804df4" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d27/structf__vector" kindref="compound">f_vector_t</ref> *</type>
+        <definition>f_vector_t* cells</definition>
+        <argsstring></argsstring>
+        <name>cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="5282" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="5282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>f_row</label>
+        <link refid="da/d7e/structf__row"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cells</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>f_vector</label>
+        <link refid="d5/d27/structf__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="5281" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="5281" bodyend="5283"/>
+    <listofallmembers>
+      <member refid="da/d7e/structf__row_1af69e5feee90fe03458ea6994bc804df4" prot="public" virt="non-virtual"><scope>f_row</scope><name>cells</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

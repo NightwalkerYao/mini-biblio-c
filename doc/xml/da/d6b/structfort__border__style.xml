@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="da/d6b/structfort__border__style" kind="struct" language="C++" prot="public">
+    <compoundname>fort_border_style</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d6b/structfort__border__style_1ad9cb9c8195dabd4fb4698c2b2410d9e8" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* border_chars[BORDER_ITEM_POS_SIZE]</definition>
+        <argsstring>[BORDER_ITEM_POS_SIZE]</argsstring>
+        <name>border_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2012" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6b/structfort__border__style_1a1c9522cfeb12351002e6e0a67c192175" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* header_border_chars[BORDER_ITEM_POS_SIZE]</definition>
+        <argsstring>[BORDER_ITEM_POS_SIZE]</argsstring>
+        <name>header_border_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2013" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d6b/structfort__border__style_1ae3447882221c2df968c612e36e65ed96" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* separator_chars[SEPARATOR_ITEM_POS_SIZE]</definition>
+        <argsstring>[SEPARATOR_ITEM_POS_SIZE]</argsstring>
+        <name>separator_chars</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2014" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2014" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2011" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2011" bodyend="2015"/>
+    <listofallmembers>
+      <member refid="da/d6b/structfort__border__style_1ad9cb9c8195dabd4fb4698c2b2410d9e8" prot="public" virt="non-virtual"><scope>fort_border_style</scope><name>border_chars</name></member>
+      <member refid="da/d6b/structfort__border__style_1a1c9522cfeb12351002e6e0a67c192175" prot="public" virt="non-virtual"><scope>fort_border_style</scope><name>header_border_chars</name></member>
+      <member refid="da/d6b/structfort__border__style_1ae3447882221c2df968c612e36e65ed96" prot="public" virt="non-virtual"><scope>fort_border_style</scope><name>separator_chars</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

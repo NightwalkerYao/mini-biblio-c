@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="db/d22/structft__table" kind="struct" language="C++" prot="public">
+    <compoundname>ft_table</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d22/structft__table_1a46c557e3a9f90e8164fadc411ade8b4e" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d27/structf__vector" kindref="compound">f_vector_t</ref> *</type>
+        <definition>f_vector_t* rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2232" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d22/structft__table_1a53e2aea4583b02c30650fb03741d9e94" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/db4/structf__table__properties" kindref="compound">f_table_properties_t</ref> *</type>
+        <definition>f_table_properties_t* properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2233" column="26" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d22/structft__table_1ab0cd6ded0a80760b696d73dedf40ed5b" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/da0/structf__string__buffer" kindref="compound">f_string_buffer_t</ref> *</type>
+        <definition>f_string_buffer_t* conv_buffer</definition>
+        <argsstring></argsstring>
+        <name>conv_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2234" column="23" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d22/structft__table_1aa18288d116dabe5bad87afc5b2e6a3d9" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cur_row</definition>
+        <argsstring></argsstring>
+        <name>cur_row</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2235" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d22/structft__table_1a653b539936c9d83c9f1fad970f5f221f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cur_col</definition>
+        <argsstring></argsstring>
+        <name>cur_col</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2236" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d22/structft__table_1ad22ec40b82a63a9e3e7971b136b721ba" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d27/structf__vector" kindref="compound">f_vector_t</ref> *</type>
+        <definition>f_vector_t* separators</definition>
+        <argsstring></argsstring>
+        <name>separators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2237" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>f_string_buffer</label>
+        <link refid="d9/da0/structf__string__buffer"/>
+      </node>
+      <node id="3">
+        <label>f_table_properties</label>
+        <link refid="d7/db4/structf__table__properties"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>border_style</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cell_properties</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>entire_table_properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>f_vector</label>
+        <link refid="d5/d27/structf__vector"/>
+      </node>
+      <node id="4">
+        <label>fort_border_style</label>
+        <link refid="da/d6b/structfort__border__style"/>
+      </node>
+      <node id="5">
+        <label>fort_entire_table_properties</label>
+        <link refid="d3/d4a/structfort__entire__table__properties"/>
+      </node>
+      <node id="1">
+        <label>ft_table</label>
+        <link refid="db/d22/structft__table"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>rows</edgelabel>
+          <edgelabel>separators</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>conv_buffer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2231" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2231" bodyend="2238"/>
+    <listofallmembers>
+      <member refid="db/d22/structft__table_1ab0cd6ded0a80760b696d73dedf40ed5b" prot="public" virt="non-virtual"><scope>ft_table</scope><name>conv_buffer</name></member>
+      <member refid="db/d22/structft__table_1a653b539936c9d83c9f1fad970f5f221f" prot="public" virt="non-virtual"><scope>ft_table</scope><name>cur_col</name></member>
+      <member refid="db/d22/structft__table_1aa18288d116dabe5bad87afc5b2e6a3d9" prot="public" virt="non-virtual"><scope>ft_table</scope><name>cur_row</name></member>
+      <member refid="db/d22/structft__table_1a53e2aea4583b02c30650fb03741d9e94" prot="public" virt="non-virtual"><scope>ft_table</scope><name>properties</name></member>
+      <member refid="db/d22/structft__table_1a46c557e3a9f90e8164fadc411ade8b4e" prot="public" virt="non-virtual"><scope>ft_table</scope><name>rows</name></member>
+      <member refid="db/d22/structft__table_1ad22ec40b82a63a9e3e7971b136b721ba" prot="public" virt="non-virtual"><scope>ft_table</scope><name>separators</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

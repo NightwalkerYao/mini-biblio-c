@@ -21,13 +21,18 @@ static int set_existing_adherent(void *NotUsed, int argc, char **argv, char **az
 }
 
 void delete_adherent() {
-  char id_adherent[11];
+  char c, id_adherent[11];
   sqlite3 *dbh;
   char *ErrMsg = 0;
   int con;
 
   printf("Entrez l'\033[1mIdentifiant de L'Adhérent\033[0m : ");
-  scanf("%s", &id_adherent);
+  scanf("%s", id_adherent);
+  while (1) {
+    c = getchar();
+    if (c == '\n')
+    break;
+  }
   // clear_buffer();
 
   con = sqlite3_open(DB_FILE, &dbh);
@@ -46,7 +51,7 @@ void delete_adherent() {
   }
 
   if(compt != 1) {
-    printf("\033[31mDésolé, cet Adhérent n'existe pas ou plus.\n");
+    printf("\033[31mDésolé, cet Adhérent n'existe pas ou plus.\033[0m\n");
   } else {
     char Query[100];
     sprintf(Query, "DELETE FROM adherents WHERE id=%s;", id_adherent);

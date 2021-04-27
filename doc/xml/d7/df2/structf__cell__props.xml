@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d7/df2/structf__cell__props" kind="struct" language="C++" prot="public">
+    <compoundname>f_cell_props</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1aebc7e6d02395da1d92d0f429651fb1b9" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cell_row</definition>
+        <argsstring></argsstring>
+        <name>cell_row</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1890" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1890" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a2050cfae9730fb07f1c72689f050ec94" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t cell_col</definition>
+        <argsstring></argsstring>
+        <name>cell_col</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1891" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1891" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a07b356a4c56beedc874b9fb0320d984d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t properties_flags</definition>
+        <argsstring></argsstring>
+        <name>properties_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1892" column="14" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a54ccd4f1df4cc1d45c57eb7f43cdf020" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int col_min_width</definition>
+        <argsstring></argsstring>
+        <name>col_min_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1894" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1aca4ea7fd31004d666dcde97abd4a872d" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="d4/d2e/fort_8h_1a3ce6dedcf688e310a3cfbb5cdae9d32c" kindref="member">ft_text_alignment</ref></type>
+        <definition>enum ft_text_alignment align</definition>
+        <argsstring></argsstring>
+        <name>align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1894" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1895" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a0eab802d4da7ff81976176b083e3e6ec" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cell_padding_top</definition>
+        <argsstring></argsstring>
+        <name>cell_padding_top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1896" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1896" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a530aadfddba7770d625b7267052b30a5" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cell_padding_bottom</definition>
+        <argsstring></argsstring>
+        <name>cell_padding_bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1897" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a974956182cc69378a7ac0fb26d650873" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cell_padding_left</definition>
+        <argsstring></argsstring>
+        <name>cell_padding_left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1898" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1898" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a544a47782e13d41f71497b0af2daac09" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cell_padding_right</definition>
+        <argsstring></argsstring>
+        <name>cell_padding_right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1899" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1899" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1afcc77435b807752ced89810351d7dffb" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cell_empty_string_height</definition>
+        <argsstring></argsstring>
+        <name>cell_empty_string_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1900" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1900" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a348652d60163f3aeb6afabb8929e4af5" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="d4/d2e/fort_8h_1a06d9536a2e476d68f5055820535d3b34" kindref="member">ft_row_type</ref></type>
+        <definition>enum ft_row_type row_type</definition>
+        <argsstring></argsstring>
+        <name>row_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1900" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1901" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1af53c0c19d0256a3939e44f608013dbf8" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int content_fg_color_number</definition>
+        <argsstring></argsstring>
+        <name>content_fg_color_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1902" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a8430efd49c624f163472b3007db3d5f3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int content_bg_color_number</definition>
+        <argsstring></argsstring>
+        <name>content_bg_color_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1903" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1af0d3576ca232677f454cb734e284e117" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cell_bg_color_number</definition>
+        <argsstring></argsstring>
+        <name>cell_bg_color_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1904" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1904" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a6b58066d703ac528955249e429754809" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="d4/d2e/fort_8h_1abc496f06f2a4c7fb58b1730ce813be0b" kindref="member">ft_text_style</ref></type>
+        <definition>enum ft_text_style cell_text_style</definition>
+        <argsstring></argsstring>
+        <name>cell_text_style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1904" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/df2/structf__cell__props_1a194687916c07a762386a70acce5ea344" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="d4/d2e/fort_8h_1abc496f06f2a4c7fb58b1730ce813be0b" kindref="member">ft_text_style</ref></type>
+        <definition>enum ft_text_style content_text_style</definition>
+        <argsstring></argsstring>
+        <name>content_text_style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1904" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1906" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="1889" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="1889" bodyend="1907"/>
+    <listofallmembers>
+      <member refid="d7/df2/structf__cell__props_1aca4ea7fd31004d666dcde97abd4a872d" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>align</name></member>
+      <member refid="d7/df2/structf__cell__props_1af0d3576ca232677f454cb734e284e117" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_bg_color_number</name></member>
+      <member refid="d7/df2/structf__cell__props_1a2050cfae9730fb07f1c72689f050ec94" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_col</name></member>
+      <member refid="d7/df2/structf__cell__props_1afcc77435b807752ced89810351d7dffb" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_empty_string_height</name></member>
+      <member refid="d7/df2/structf__cell__props_1a530aadfddba7770d625b7267052b30a5" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_padding_bottom</name></member>
+      <member refid="d7/df2/structf__cell__props_1a974956182cc69378a7ac0fb26d650873" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_padding_left</name></member>
+      <member refid="d7/df2/structf__cell__props_1a544a47782e13d41f71497b0af2daac09" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_padding_right</name></member>
+      <member refid="d7/df2/structf__cell__props_1a0eab802d4da7ff81976176b083e3e6ec" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_padding_top</name></member>
+      <member refid="d7/df2/structf__cell__props_1aebc7e6d02395da1d92d0f429651fb1b9" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_row</name></member>
+      <member refid="d7/df2/structf__cell__props_1a6b58066d703ac528955249e429754809" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>cell_text_style</name></member>
+      <member refid="d7/df2/structf__cell__props_1a54ccd4f1df4cc1d45c57eb7f43cdf020" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>col_min_width</name></member>
+      <member refid="d7/df2/structf__cell__props_1a8430efd49c624f163472b3007db3d5f3" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>content_bg_color_number</name></member>
+      <member refid="d7/df2/structf__cell__props_1af53c0c19d0256a3939e44f608013dbf8" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>content_fg_color_number</name></member>
+      <member refid="d7/df2/structf__cell__props_1a194687916c07a762386a70acce5ea344" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>content_text_style</name></member>
+      <member refid="d7/df2/structf__cell__props_1a07b356a4c56beedc874b9fb0320d984d" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>properties_flags</name></member>
+      <member refid="d7/df2/structf__cell__props_1a348652d60163f3aeb6afabb8929e4af5" prot="public" virt="non-virtual"><scope>f_cell_props</scope><name>row_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

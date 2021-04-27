@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d2/d1b/find__adherent_8c" kind="file" language="C++">
+    <compoundname>find_adherent.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">../inc/sqlite3_client.h</includes>
+    <includes refid="d4/d2e/fort_8h" local="yes">../inc/fort.h</includes>
+    <includes refid="dd/dc0/find__adherent_8h" local="yes">../inc/find_adherent.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>../inc/find_adherent.h</label>
+        <link refid="dd/dc0/find__adherent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../inc/fort.h</label>
+        <link refid="d4/d2e/fort_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../inc/sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c</label>
+        <link refid="d2/d1b/find__adherent_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d2/d1b/find__adherent_8c_1a2897960a217df341fd738baa780fc2ee" prot="public" static="no">
+        <name>_FIND_ADHERENT_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" line="10" column="9" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d2/d1b/find__adherent_8c_1a25ac9fbfbe7286fea6aaa77b40abda67" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int compt</definition>
+        <argsstring></argsstring>
+        <name>compt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" line="12" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d1b/find__adherent_8c_1adf122296c5cf5816e18966e23e4ef4f8" prot="public" static="yes" mutable="no">
+        <type><ref refid="d4/d2e/fort_8h_1a6307d2840e0e96880c4d0f04b12a2187" kindref="member">ft_table_t</ref> *</type>
+        <definition>ft_table_t* table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" line="13" column="19" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d1b/find__adherent_8c_1ad9f91f1eeae7dbaec223d8e205d1035b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_find</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_find</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" line="15" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1b/find__adherent_8c_1aa6fbe4d769eb537fe3b92c4faff7e24f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int set_existing_adherent</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>set_existing_adherent</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" line="20" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1b/find__adherent_8c_1aec2bd8210d5f90d41b0efa09856bdece" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void find_adherent</definition>
+        <argsstring>()</argsstring>
+        <name>find_adherent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Recherche des adherents dans la base de donnees suivant les informations reçues interactivement </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" line="25" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c" bodystart="25" bodyend="110"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" compoundref="d4/dd6/sqlite3__client_8c" startline="13" endline="20">clear_buffer</references>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/sqlite3_client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/fort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/find_adherent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FIND_ADHERENT_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIND_ADHERENT_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>compt;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="db/d22/structft__table" kindref="compound">ft_table_t</ref><sp/>*table;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_find(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>ft_u8printf_ln(table,<sp/></highlight><highlight class="stringliteral">&quot;%s|%s|%s|%s&quot;</highlight><highlight class="normal">,<sp/>argv[0],<sp/>argv[1],<sp/>argv[2],<sp/>argv[3]);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>set_existing_adherent(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>compt<sp/>=<sp/>atoi(argv[0]);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="dd/dc0/find__adherent_8h_1ab18f55f74bdd6cf848287aa72c0f30fd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/dc0/find__adherent_8h_1ab18f55f74bdd6cf848287aa72c0f30fd" kindref="member">find_adherent</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>find_by,<sp/>c;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*col;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Rechercher<sp/>avec<sp/>:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[1m\033[34m1\033[0m.<sp/>L&apos;Identifiant\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[1m\033[34m2\033[0m.<sp/>Le<sp/>Nom\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Votre<sp/>choix<sp/>:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;find_by);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(1)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>getchar();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(find_by<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>find_by<sp/>!=<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>::<sp/>\033[1mChoix<sp/>non<sp/>disponible\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(find_by<sp/>!=<sp/>1<sp/>&amp;&amp;<sp/>find_by<sp/>!=<sp/>2);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(find_by)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>col<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>col<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;nom&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>q[100];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>sqlite3<sp/>*dbh;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ErrMsg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>con;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrez<sp/>\033[1mvotre<sp/>recherche\033[0m<sp/>:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>fgets(q,<sp/>99,<sp/>stdin);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" kindref="member">clear_buffer</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_open(<ref refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>,<sp/>&amp;dbh);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(con)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQLite3<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>sqlite3_errmsg(dbh));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>adherent<sp/>hasn&apos;t<sp/>already<sp/>a<sp/>book</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query0[100];</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(find_by<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>sprintf(Query0,<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>COUNT(*)<sp/>AS<sp/>nb<sp/>FROM<sp/>adherents<sp/>WHERE<sp/>%s=&apos;%s&apos;;&quot;</highlight><highlight class="normal">,<sp/>col,<sp/>trim(q));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>sprintf(Query0,<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>COUNT(*)<sp/>AS<sp/>nb<sp/>FROM<sp/>adherents<sp/>WHERE<sp/>%s<sp/>LIKE<sp/>&apos;%%%s%&apos;;&quot;</highlight><highlight class="normal">,<sp/>col,<sp/>trim(q));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Requete<sp/>::<sp/>%s\n&quot;,<sp/>Query0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query0,<sp/>set_existing_adherent,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>1<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(compt<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[31mDésolé,<sp/>nous<sp/>n&apos;avons<sp/>rien<sp/>trouvé<sp/>pour<sp/>votre<sp/>recherche.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>table<sp/>=<sp/><ref refid="d4/d2e/fort_8h_1af73fc78695a3009f5ff79a2c0d28c600" kindref="member">ft_create_table</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Change<sp/>border<sp/>style<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1aaa966b7da0ee2e2d2a93dc6a5e1ef81b" kindref="member">ft_set_border_style</ref>(table,<sp/>FT_DOUBLE2_STYLE);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>&quot;header&quot;<sp/>type<sp/>for<sp/>the<sp/>first<sp/>row<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1a10dc95b3d810a0ab2bf6c90b7b8c66a4" kindref="member">ft_set_cell_prop</ref>(table,<sp/>0,<sp/><ref refid="d4/d2e/fort_8h_1ad5b6b32262309f37874d11369f47c7a5" kindref="member">FT_ANY_COLUMN</ref>,<sp/><ref refid="d4/d2e/fort_8h_1abd5e4b5a6cb494024967f9d22a50c708" kindref="member">FT_CPROP_ROW_TYPE</ref>,<sp/><ref refid="d4/d2e/fort_8h_1a06d9536a2e476d68f5055820535d3b34a2a0a31078eac88202029c3e9bdaa614a" kindref="member">FT_ROW_HEADER</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1a4ebdb2eea82c8b8c3b80f0c7b7bf1536" kindref="member">ft_write_ln</ref>(table,<sp/></highlight><highlight class="stringliteral">&quot;ID&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;NOM&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;CONTACT&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ADRESSE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query[200];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(find_by<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(Query,<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>id,REPLACE(nom,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>nom,<sp/>REPLACE(contact,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>contact,<sp/>REPLACE(adresse,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>adresse<sp/>FROM<sp/>adherents<sp/>WHERE<sp/>%s=%s<sp/>ORDER<sp/>BY<sp/>id<sp/>ASC;&quot;</highlight><highlight class="normal">,<sp/>col,<sp/>trim(q));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(Query,<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>id,REPLACE(nom,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>nom,<sp/>REPLACE(contact,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>contact,<sp/>REPLACE(adresse,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>adresse<sp/>FROM<sp/>adherents<sp/>WHERE<sp/>%s<sp/>LIKE<sp/>&apos;%%%s%&apos;<sp/>ORDER<sp/>BY<sp/>id<sp/>ASC;&quot;</highlight><highlight class="normal">,<sp/>col,<sp/>trim(q));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Query<sp/>:<sp/>%s\n&quot;,<sp/>Query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>callback_find,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>2<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1a10dc95b3d810a0ab2bf6c90b7b8c66a4" kindref="member">ft_set_cell_prop</ref>(table,<sp/><ref refid="d4/d2e/fort_8h_1a18fe66b5bbb33d73be7ba06518c1f40d" kindref="member">FT_ANY_ROW</ref>,<sp/>4,<sp/><ref refid="d4/d2e/fort_8h_1ae5586130d3dd258d477e370923d0889e" kindref="member">FT_CPROP_TEXT_ALIGN</ref>,<sp/><ref refid="d4/d2e/fort_8h_1a3ce6dedcf688e310a3cfbb5cdae9d32cac43d09334b02f1300989a8789455183e" kindref="member">FT_ALIGNED_CENTER</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="d4/d2e/fort_8h_1aba499778dc3afcddfed50e79b0d97832" kindref="member">ft_to_string</ref>(table));</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1ad8cb9ed46da7455f8b6baed42a4a1d31" kindref="member">ft_destroy_table</ref>(table);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>sqlite3_close(dbh);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c"/>
+  </compounddef>
+</doxygen>

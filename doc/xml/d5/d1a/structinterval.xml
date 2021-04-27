@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d5/d1a/structinterval" kind="struct" language="C++" prot="public">
+    <compoundname>interval</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/d1a/structinterval_1a791a2b329bfbf37ac3f72dc0f27979b0" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t first</definition>
+        <argsstring></argsstring>
+        <name>first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7573" column="13" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d1a/structinterval_1a5a79a99f8f7d17cd3d793a3d777b3f69" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t last</definition>
+        <argsstring></argsstring>
+        <name>last</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7574" column="13" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7574" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7572" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7572" bodyend="7575"/>
+    <listofallmembers>
+      <member refid="d5/d1a/structinterval_1a791a2b329bfbf37ac3f72dc0f27979b0" prot="public" virt="non-virtual"><scope>interval</scope><name>first</name></member>
+      <member refid="d5/d1a/structinterval_1a5a79a99f8f7d17cd3d793a3d777b3f69" prot="public" virt="non-virtual"><scope>interval</scope><name>last</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

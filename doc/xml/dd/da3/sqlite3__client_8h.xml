@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="dd/da3/sqlite3__client_8h" kind="file" language="C++">
+    <compoundname>sqlite3_client.h</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includedby refid="df/d7b/list__emprunts_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h</includedby>
+    <includedby refid="d6/d16/seed_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/seed.h</includedby>
+    <includedby refid="de/d0b/add__emprunt_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h</includedby>
+    <includedby refid="d5/d11/add__adherent_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h</includedby>
+    <includedby refid="d1/d6a/list__adherents_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/list_adherents.h</includedby>
+    <includedby refid="da/df7/back__emprunt_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/back_emprunt.h</includedby>
+    <includedby refid="d5/d12/add__livre_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/add_livre.h</includedby>
+    <includedby refid="dd/dc0/find__adherent_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/find_adherent.h</includedby>
+    <includedby refid="dc/d19/delete__livre_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/delete_livre.h</includedby>
+    <includedby refid="da/db3/find__livre_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/find_livre.h</includedby>
+    <includedby refid="dd/d9f/delete__adherent_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/delete_adherent.h</includedby>
+    <includedby refid="d6/d1d/list__livres_8h" local="yes">/home/nightwalker/Class/C_Adv/biblio/inc/list_livres.h</includedby>
+    <includedby refid="d9/d02/list__livres_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/list_livres.c</includedby>
+    <includedby refid="d4/dd6/sqlite3__client_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/sqlite3_client.c</includedby>
+    <includedby refid="da/dc5/delete__livre_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/delete_livre.c</includedby>
+    <includedby refid="de/d2a/delete__adherent_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/delete_adherent.c</includedby>
+    <includedby refid="d6/dfc/back__emprunt_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/back_emprunt.c</includedby>
+    <includedby refid="da/dfb/list__adherents_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/list_adherents.c</includedby>
+    <includedby refid="dc/d23/add__emprunt_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/add_emprunt.c</includedby>
+    <includedby refid="d2/d1b/find__adherent_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c</includedby>
+    <includedby refid="d4/d28/add__adherent_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c</includedby>
+    <includedby refid="d3/d14/seed_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/seed.c</includedby>
+    <includedby refid="d6/d29/find__livre_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/find_livre.c</includedby>
+    <includedby refid="d7/d17/add__livre_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/add_livre.c</includedby>
+    <includedby refid="d2/d83/list__emprunts_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c</includedby>
+    <includedby refid="d0/d29/main_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h</label>
+        <link refid="d5/d11/add__adherent_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h</label>
+        <link refid="de/d0b/add__emprunt_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_livre.h</label>
+        <link refid="d5/d12/add__livre_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/back_emprunt.h</label>
+        <link refid="da/df7/back__emprunt_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/delete_adherent.h</label>
+        <link refid="dd/d9f/delete__adherent_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/delete_livre.h</label>
+        <link refid="dc/d19/delete__livre_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/find_adherent.h</label>
+        <link refid="dd/dc0/find__adherent_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/find_livre.h</label>
+        <link refid="da/db3/find__livre_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/list_adherents.h</label>
+        <link refid="d1/d6a/list__adherents_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h</label>
+        <link refid="df/d7b/list__emprunts_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/list_livres.h</label>
+        <link refid="d6/d1d/list__livres_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/seed.h</label>
+        <link refid="d6/d16/seed_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c</label>
+        <link refid="d4/d28/add__adherent_8c_source"/>
+      </node>
+      <node id="8">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/add_emprunt.c</label>
+        <link refid="dc/d23/add__emprunt_8c_source"/>
+      </node>
+      <node id="16">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/add_livre.c</label>
+        <link refid="d7/d17/add__livre_8c_source"/>
+      </node>
+      <node id="14">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/back_emprunt.c</label>
+        <link refid="d6/dfc/back__emprunt_8c_source"/>
+      </node>
+      <node id="23">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/delete_adherent.c</label>
+        <link refid="de/d2a/delete__adherent_8c_source"/>
+      </node>
+      <node id="20">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/delete_livre.c</label>
+        <link refid="da/dc5/delete__livre_8c_source"/>
+      </node>
+      <node id="18">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/find_adherent.c</label>
+        <link refid="d2/d1b/find__adherent_8c_source"/>
+      </node>
+      <node id="27">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/find_livre.c</label>
+        <link refid="d6/d29/find__livre_8c_source"/>
+      </node>
+      <node id="12">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/list_adherents.c</label>
+        <link refid="da/dfb/list__adherents_8c_source"/>
+      </node>
+      <node id="3">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c</label>
+        <link refid="d2/d83/list__emprunts_8c_source"/>
+      </node>
+      <node id="25">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/list_livres.c</label>
+        <link refid="d9/d02/list__livres_8c_source"/>
+      </node>
+      <node id="4">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/main.c</label>
+        <link refid="d0/d29/main_8c_source"/>
+      </node>
+      <node id="6">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/seed.c</label>
+        <link refid="d3/d14/seed_8c_source"/>
+      </node>
+      <node id="26">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/sqlite3_client.c</label>
+        <link refid="d4/dd6/sqlite3__client_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char * DB_FILE</definition>
+        <argsstring></argsstring>
+        <name>DB_FILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Le chemin vers le fichier de base de donnees </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" line="16" column="19" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/sqlite3_client.c" bodystart="11" bodyend="-1" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" declline="16" declcolumn="19"/>
+        <referencedby refid="d5/d11/add__adherent_8h_1afec6cd4c037f3957b0d69255294b34d2" compoundref="d4/d28/add__adherent_8c" startline="15" endline="49">add_adherent</referencedby>
+        <referencedby refid="de/d0b/add__emprunt_8h_1a88898a9cd2a643fe57cb1977866905c1" compoundref="dc/d23/add__emprunt_8c" startline="22" endline="72">add_emprunt</referencedby>
+        <referencedby refid="d5/d12/add__livre_8h_1a113e7bd24dea53eb1f6f7231f9f3acc3" compoundref="d7/d17/add__livre_8c" startline="15" endline="57">add_livre</referencedby>
+        <referencedby refid="da/df7/back__emprunt_8h_1a611978e909f99fd80a242bc40aac349b" compoundref="d6/dfc/back__emprunt_8c" startline="22" endline="69">back_emprunt</referencedby>
+        <referencedby refid="dd/da3/sqlite3__client_8h_1a68599f8683c03523022e583cd0045eb3" compoundref="d4/dd6/sqlite3__client_8c" startline="36" endline="50">connect</referencedby>
+        <referencedby refid="dd/d9f/delete__adherent_8h_1a501ca0d9a6cbb452b3e4fe008590fc51" compoundref="de/d2a/delete__adherent_8c" startline="23" endline="71">delete_adherent</referencedby>
+        <referencedby refid="dc/d19/delete__livre_8h_1a14319c68ebbe53bdc79a950ae4ae08d1" compoundref="da/dc5/delete__livre_8c" startline="23" endline="71">delete_livre</referencedby>
+        <referencedby refid="dd/dc0/find__adherent_8h_1ab18f55f74bdd6cf848287aa72c0f30fd" compoundref="d2/d1b/find__adherent_8c" startline="25" endline="110">find_adherent</referencedby>
+        <referencedby refid="da/db3/find__livre_8h_1ad3458f29984513250fa8825c5e67f49a" compoundref="d6/d29/find__livre_8c" startline="25" endline="118">find_livre</referencedby>
+        <referencedby refid="d1/d6a/list__adherents_8h_1addfa191146ff6591a7b57adeed5518ff" compoundref="da/dfb/list__adherents_8c" startline="36" endline="63">list_adherents</referencedby>
+        <referencedby refid="df/d7b/list__emprunts_8h_1a637ed376e54b3e743d50121103695065" compoundref="d2/d83/list__emprunts_8c" startline="41" endline="68">list_emprunts</referencedby>
+        <referencedby refid="d6/d1d/list__livres_8h_1a9a782cf7ec3e0f57b14a59a5411fd647" compoundref="d9/d02/list__livres_8c" startline="37" endline="64">list_livres</referencedby>
+        <referencedby refid="d6/d16/seed_8h_1ad8c8e513fc132a7e15a7879ad0e27ab8" compoundref="d3/d14/seed_8c" startline="15" endline="66">seed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clear_buffer</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear_buffer</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Nettoie le tampon apres un appel <computeroutput>scanf</computeroutput> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" line="24" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/sqlite3_client.c" bodystart="13" bodyend="20" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" declline="24" declcolumn="6"/>
+        <referencedby refid="d5/d11/add__adherent_8h_1afec6cd4c037f3957b0d69255294b34d2" compoundref="d4/d28/add__adherent_8c" startline="15" endline="49">add_adherent</referencedby>
+        <referencedby refid="de/d0b/add__emprunt_8h_1a88898a9cd2a643fe57cb1977866905c1" compoundref="dc/d23/add__emprunt_8c" startline="22" endline="72">add_emprunt</referencedby>
+        <referencedby refid="d5/d12/add__livre_8h_1a113e7bd24dea53eb1f6f7231f9f3acc3" compoundref="d7/d17/add__livre_8c" startline="15" endline="57">add_livre</referencedby>
+        <referencedby refid="da/df7/back__emprunt_8h_1a611978e909f99fd80a242bc40aac349b" compoundref="d6/dfc/back__emprunt_8c" startline="22" endline="69">back_emprunt</referencedby>
+        <referencedby refid="dd/dc0/find__adherent_8h_1ab18f55f74bdd6cf848287aa72c0f30fd" compoundref="d2/d1b/find__adherent_8c" startline="25" endline="110">find_adherent</referencedby>
+        <referencedby refid="da/db3/find__livre_8h_1ad3458f29984513250fa8825c5e67f49a" compoundref="d6/d29/find__livre_8c" startline="25" endline="118">find_livre</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="dd/da3/sqlite3__client_8h_1a29ba0737e871f9becbdf9b18aec433ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* trim</definition>
+        <argsstring>(char *)</argsstring>
+        <name>trim</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" line="34" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/sqlite3_client.c" bodystart="22" bodyend="34" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dd/da3/sqlite3__client_8h_1a68599f8683c03523022e583cd0045eb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sqlite3 *</type>
+        <definition>sqlite3 * connect</definition>
+        <argsstring>(void)</argsstring>
+        <name>connect</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>sqlite3* une instance de connexion SQLite3</para>
+</simplesect>
+Teste la connectivite avec la base de donnees et affiche une alerte sur l&apos;etat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" line="44" column="9" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/sqlite3_client.c" bodystart="36" bodyend="50" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h" declline="44" declcolumn="9"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Le client de test de la connectivite avec la base de donnees et les fonctions communes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para><ulink url="https://about.me/nightwalker.y">KOUASSI Yao Kan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" kindref="member">clear_buffer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*trim(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">sqlite3*<sp/><ref refid="dd/da3/sqlite3__client_8h_1a68599f8683c03523022e583cd0045eb3" kindref="member">connect</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/sqlite3_client.h"/>
+  </compounddef>
+</doxygen>

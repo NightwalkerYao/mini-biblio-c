@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="de/d0b/add__emprunt_8h" kind="file" language="C++">
+    <compoundname>add_emprunt.h</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">sqlite3_client.h</includes>
+    <includedby refid="dc/d23/add__emprunt_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/add_emprunt.c</includedby>
+    <includedby refid="d0/d29/main_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h</label>
+        <link refid="de/d0b/add__emprunt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h</label>
+        <link refid="de/d0b/add__emprunt_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/add_emprunt.c</label>
+        <link refid="dc/d23/add__emprunt_8c_source"/>
+      </node>
+      <node id="3">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/main.c</label>
+        <link refid="d0/d29/main_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/d0b/add__emprunt_8h_1a6547f6248730bb9c24665b69e2763013" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback_emprunt</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback_emprunt</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback pour la requete d&apos;enregistrement de l&apos;emprunt</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h" line="22" column="12" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h" declline="22" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d0b/add__emprunt_8h_1a52c2cff9d2d8f38b0b439d3eca7d2f84" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int set_existing_emp</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>set_existing_emp</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0</para>
+</simplesect>
+Callback pour la requete d&apos;enregistrement de l&apos;emprunt </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h" line="35" column="12" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h" declline="35" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="de/d0b/add__emprunt_8h_1a88898a9cd2a643fe57cb1977866905c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add_emprunt</definition>
+        <argsstring>(void)</argsstring>
+        <name>add_emprunt</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Enregistre un nouvel Emprunt dans la base de donnees. Les informations de l&apos;Emprunt sont demandees de façon interactive </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h" line="46" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/add_emprunt.c" bodystart="22" bodyend="72" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h" declline="46" declcolumn="6"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" compoundref="d4/dd6/sqlite3__client_8c" startline="13" endline="20">clear_buffer</references>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Les prototypes des fonctions qui gèrent l&apos;ajout d&apos;un nouvel Emprunt. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para><ulink url="https://about.me/nightwalker.y">KOUASSI Yao Kan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/da3/sqlite3__client_8h" kindref="compound">sqlite3_client.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback_emprunt(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>set_existing_emp(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="de/d0b/add__emprunt_8h_1a88898a9cd2a643fe57cb1977866905c1" kindref="member">add_emprunt</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_emprunt.h"/>
+  </compounddef>
+</doxygen>

@@ -21,13 +21,18 @@ static int set_existing_livre(void *NotUsed, int argc, char **argv, char **azCol
 }
 
 void delete_livre() {
-  char id_livre[11];
+  char c, id_livre[11];
   sqlite3 *dbh;
   char *ErrMsg = 0;
   int con;
 
   printf("Entrez l'\033[1mIdentifiant du Livre\033[0m : ");
-  scanf("%s", &id_livre);
+  scanf("%s", id_livre);
+  while (1) {
+    c = getchar();
+    if (c == '\n')
+    break;
+  }
   // clear_buffer();
 
   con = sqlite3_open(DB_FILE, &dbh);
@@ -46,7 +51,7 @@ void delete_livre() {
   }
 
   if(compt != 1) {
-    printf("\033[31mDésolé, ce Livre n'existe pas ou plus.\n");
+    printf("\033[31mDésolé, ce Livre n'existe pas ou plus.\033[0m\n");
   } else {
     char Query[100];
     sprintf(Query, "DELETE FROM livres WHERE id=%s;", id_livre);

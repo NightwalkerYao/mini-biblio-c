@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d2/d71/structf__string__view" kind="struct" language="C++" prot="public">
+    <compoundname>f_string_view</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d71/structf__string__view_1aa44363a2ad0a535a64170738a2d6e58d" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* cstr</definition>
+        <argsstring></argsstring>
+        <name>cstr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="129" column="20" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d71/structf__string__view_1a0a19a0e48972c54f8faf0b433d5849dc" prot="public" static="no" mutable="no">
+        <type>const wchar_t *</type>
+        <definition>const wchar_t* wstr</definition>
+        <argsstring></argsstring>
+        <name>wstr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="131" column="23" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d71/structf__string__view_1aa9aef96a02d5687b18447086ae54dcbd" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* u8str</definition>
+        <argsstring></argsstring>
+        <name>u8str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="134" column="20" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d71/structf__string__view_1a0d49d74db4c035719c3867723cf7e779" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="136" column="20" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d71/structf__string__view_1affad9cd42dfb6c87f001c39abfada73a" prot="public" static="no" mutable="no">
+        <type>union f_string_view::@0</type>
+        <definition>union f_string_view::@0 u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="137" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d71/structf__string__view_1a3f19eb114211edc9f6a16bf9de2cd32b" prot="public" static="no" mutable="no">
+        <type>enum f_string_type</type>
+        <definition>enum f_string_type type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7724" column="5" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="127" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="127" bodyend="139"/>
+    <listofallmembers>
+      <member refid="d2/d71/structf__string__view_1aa44363a2ad0a535a64170738a2d6e58d" prot="public" virt="non-virtual"><scope>f_string_view</scope><name>cstr</name></member>
+      <member refid="d2/d71/structf__string__view_1a0d49d74db4c035719c3867723cf7e779" prot="public" virt="non-virtual"><scope>f_string_view</scope><name>data</name></member>
+      <member refid="d2/d71/structf__string__view_1a3f19eb114211edc9f6a16bf9de2cd32b" prot="public" virt="non-virtual"><scope>f_string_view</scope><name>type</name></member>
+      <member refid="d2/d71/structf__string__view_1affad9cd42dfb6c87f001c39abfada73a" prot="public" virt="non-virtual"><scope>f_string_view</scope><name>u</name></member>
+      <member refid="d2/d71/structf__string__view_1aa9aef96a02d5687b18447086ae54dcbd" prot="public" virt="non-virtual"><scope>f_string_view</scope><name>u8str</name></member>
+      <member refid="d2/d71/structf__string__view_1a0a19a0e48972c54f8faf0b433d5849dc" prot="public" virt="non-virtual"><scope>f_string_view</scope><name>wstr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
