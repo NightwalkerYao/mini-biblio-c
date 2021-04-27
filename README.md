@@ -14,10 +14,10 @@ Mini bibliotheque en C avec SQLite3, pour le compte du TP2 de classe - Programma
   `sudo apt-get install -y libsqlite3-dev`
   
 ## Compilation
-`make app`
+`make build`
 
 ## Execution
-`./app`
+`./biblio`
 
 ## Notes
 Ceci n'est qu'un exemple, pour les besoins des TP. Si vous developpez une application pour le monde reel, pensez a faire des requetes preparees. Vous trouverez un tutoriel au lien suivant : [https://zetcode.com/db/sqlitec/](https://zetcode.com/db/sqlitec/)
