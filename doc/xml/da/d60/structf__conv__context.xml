@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="da/d60/structf__conv__context" kind="struct" language="C++" prot="public">
+    <compoundname>f_conv_context</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1a1fe855c208bc17a51a4d34fefdb2d5b1" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="183" column="14" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1aa90b4ed90e90c0b406451c868720e395" prot="public" static="no" mutable="no">
+        <type>wchar_t *</type>
+        <definition>wchar_t* wbuf</definition>
+        <argsstring></argsstring>
+        <name>wbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="185" column="17" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1aa9aef96a02d5687b18447086ae54dcbd" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* u8str</definition>
+        <argsstring></argsstring>
+        <name>u8str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="188" column="20" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1a9fb671c65c4d8e62af6aedb6145fa422" prot="public" static="no" mutable="no">
+        <type>union f_conv_context::@1</type>
+        <definition>union f_conv_context::@1 u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="190" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1ade0ad9364f66318b0e4a4ac90accdee1" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t raw_avail</definition>
+        <argsstring></argsstring>
+        <name>raw_avail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="191" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1a294d6894fda1ddbce737ad28fa939af6" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="d6/d12/structf__context" kindref="compound">f_context</ref> *</type>
+        <definition>struct f_context* cntx</definition>
+        <argsstring></argsstring>
+        <name>cntx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="192" column="20" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d60/structf__conv__context_1ab7e55cddff5e671c753ca98520c3bab6" prot="public" static="no" mutable="no">
+        <type>enum f_string_type</type>
+        <definition>enum f_string_type b_type</definition>
+        <argsstring></argsstring>
+        <name>b_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="192" column="20" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>f_context</label>
+        <link refid="d6/d12/structf__context"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>table_properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>f_conv_context</label>
+        <link refid="da/d60/structf__conv__context"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>cntx</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>f_table_properties</label>
+        <link refid="d7/db4/structf__table__properties"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>border_style</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cell_properties</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>entire_table_properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>f_vector</label>
+        <link refid="d5/d27/structf__vector"/>
+      </node>
+      <node id="4">
+        <label>fort_border_style</label>
+        <link refid="da/d6b/structfort__border__style"/>
+      </node>
+      <node id="6">
+        <label>fort_entire_table_properties</label>
+        <link refid="d3/d4a/structfort__entire__table__properties"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="181" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="181" bodyend="194"/>
+    <listofallmembers>
+      <member refid="da/d60/structf__conv__context_1ab7e55cddff5e671c753ca98520c3bab6" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>b_type</name></member>
+      <member refid="da/d60/structf__conv__context_1a1fe855c208bc17a51a4d34fefdb2d5b1" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>buf</name></member>
+      <member refid="da/d60/structf__conv__context_1a294d6894fda1ddbce737ad28fa939af6" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>cntx</name></member>
+      <member refid="da/d60/structf__conv__context_1ade0ad9364f66318b0e4a4ac90accdee1" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>raw_avail</name></member>
+      <member refid="da/d60/structf__conv__context_1a9fb671c65c4d8e62af6aedb6145fa422" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>u</name></member>
+      <member refid="da/d60/structf__conv__context_1aa9aef96a02d5687b18447086ae54dcbd" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>u8str</name></member>
+      <member refid="da/d60/structf__conv__context_1aa90b4ed90e90c0b406451c868720e395" prot="public" virt="non-virtual"><scope>f_conv_context</scope><name>wbuf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

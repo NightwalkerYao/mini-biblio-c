@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>La Mini-Biblio:  Fichier source de /home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">La Mini-Biblio
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+   <div id="projectbrief">Mini application de gestion d&#39;une Bibliotheque</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.2 -->
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',false,false,'search.php','Recherche');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d2/d83/list__emprunts_8c_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">list_emprunts.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;sqlite3.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../inc/sqlite3_client.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;../inc/fort.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../inc/list_emprunts.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _LIST_EMPRUNTS_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _LIST_EMPRUNTS_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">static</span> <a class="code" href="../../db/d22/structft__table.html">ft_table_t</a> *table;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> count_emprunts = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> print_count_emprunts(<span class="keywordtype">void</span> *NotUsed, <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv, <span class="keywordtype">char</span> **azColName) {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  count_emprunts = atoi(argv[0]);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordflow">if</span>(count_emprunts &gt; 0) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    table = <a class="code" href="../../d4/d2e/fort_8h.html#af73fc78695a3009f5ff79a2c0d28c600">ft_create_table</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">/* Change border style */</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="../../d4/d2e/fort_8h.html#aaa966b7da0ee2e2d2a93dc6a5e1ef81b">ft_set_border_style</a>(table, FT_DOUBLE2_STYLE);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/* Set &quot;header&quot; type for the first row */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d4/d2e/fort_8h.html#a10dc95b3d810a0ab2bf6c90b7b8c66a4">ft_set_cell_prop</a>(table, 0, <a class="code" href="../../d4/d2e/fort_8h.html#ad5b6b32262309f37874d11369f47c7a5">FT_ANY_COLUMN</a>, <a class="code" href="../../d4/d2e/fort_8h.html#abd5e4b5a6cb494024967f9d22a50c708">FT_CPROP_ROW_TYPE</a>, <a class="code" href="../../d4/d2e/fort_8h.html#a06d9536a2e476d68f5055820535d3b34a2a0a31078eac88202029c3e9bdaa614a">FT_ROW_HEADER</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d4/d2e/fort_8h.html#a4ebdb2eea82c8b8c3b80f0c7b7bf1536">ft_write_ln</a>(table, <span class="stringliteral">&quot;ADHERENT&quot;</span>, <span class="stringliteral">&quot;LIVRE&quot;</span>, <span class="stringliteral">&quot;AUTEUR&quot;</span>, <span class="stringliteral">&quot;DATE DE SORTIE&quot;</span>, <span class="stringliteral">&quot;DATE DE RETOUR&quot;</span>, <span class="stringliteral">&quot;ETAT&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    printf(<span class="stringliteral">&quot;\033[1m Il n&#39;y a aucun Emprunt pour le moment.\033[0m\n&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> print_emprunts(<span class="keywordtype">void</span> *NotUsed, <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv, <span class="keywordtype">char</span> **azColName) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">// id_adherent 0, id_livre 1, date_sortie 2, date_retour 3, etat 4, nom_adherent 5, titre_livre 6, auteur_livre 7</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">if</span>(strcmp(argv[4], <span class="stringliteral">&quot;emprunte&quot;</span>) == 0) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ft_u8printf_ln(table, <span class="stringliteral">&quot;[%s]%s|[%s]%s|%s|%s|%s|%s&quot;</span>, argv[0], argv[5], argv[1], argv[6], argv[7], argv[2], argv[3], <span class="stringliteral">&quot;Non Rendu&quot;</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    ft_u8printf_ln(table, <span class="stringliteral">&quot;[%s]%s|[%s]%s|%s|%s|%s|%s&quot;</span>, argv[0], argv[5], argv[1], argv[6], argv[7], argv[2], argv[3], <span class="stringliteral">&quot;Rendu&quot;</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../df/d7b/list__emprunts_8h.html#a637ed376e54b3e743d50121103695065">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../df/d7b/list__emprunts_8h.html#a637ed376e54b3e743d50121103695065">list_emprunts</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  sqlite3 *dbh;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">char</span> *ErrMsg = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">int</span> con;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  con = sqlite3_open(<a class="code" href="../../dd/da3/sqlite3__client_8h.html#a47d65c930f9eac8a7d8277affeba949b">DB_FILE</a>, &amp;dbh);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span>(con) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;\033[31mErreur SQLite3 :: \033[1m%s\033[0m\n&quot;</span>, sqlite3_errmsg(dbh));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    exit(1);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">char</span>* Query_0 = <span class="stringliteral">&quot;SELECT COUNT(*) AS nb FROM adherents_livres;&quot;</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  con = sqlite3_exec(dbh, Query_0, print_count_emprunts, 0, &amp;ErrMsg);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span>( con != SQLITE_OK ){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;\033[31mErreur SQL :: \033[1m%s\033[0m\n&quot;</span>, ErrMsg);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    sqlite3_free(ErrMsg);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">char</span>* Query = <span class="stringliteral">&quot;SELECT al.id_adherent AS id_adherent, al.id_livre AS id_livre, al.date_sortie AS date_sortie, REPLACE(al.date_retour, CHAR(10), &#39;&#39;) AS date_retour, REPLACE(al.etat, CHAR(10), &#39;&#39;) AS etat, REPLACE(a.nom, CHAR(10), &#39;&#39;) AS nom_adherent, REPLACE(l.titre, CHAR(10), &#39;&#39;) AS titre_livre, REPLACE(l.auteur, CHAR(10), &#39;&#39;) AS auteur_livre FROM adherents_livres al LEFT JOIN adherents a ON al.id_adherent=a.id LEFT JOIN livres l ON al.id_livre=l.id ORDER BY al.date_sortie ASC;&quot;</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  con = sqlite3_exec(dbh, Query, print_emprunts, 0, &amp;ErrMsg);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span>( con != SQLITE_OK ){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;\033[31mErreur SQL :: \033[1m%s\033[0m\n&quot;</span>, ErrMsg);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    sqlite3_free(ErrMsg);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span>(count_emprunts &gt; 0) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d4/d2e/fort_8h.html#a10dc95b3d810a0ab2bf6c90b7b8c66a4">ft_set_cell_prop</a>(table, <a class="code" href="../../d4/d2e/fort_8h.html#a18fe66b5bbb33d73be7ba06518c1f40d">FT_ANY_ROW</a>, 6, <a class="code" href="../../d4/d2e/fort_8h.html#ae5586130d3dd258d477e370923d0889e">FT_CPROP_TEXT_ALIGN</a>, <a class="code" href="../../d4/d2e/fort_8h.html#a3ce6dedcf688e310a3cfbb5cdae9d32cac43d09334b02f1300989a8789455183e">FT_ALIGNED_CENTER</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, <a class="code" href="../../d4/d2e/fort_8h.html#aba499778dc3afcddfed50e79b0d97832">ft_to_string</a>(table));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d4/d2e/fort_8h.html#ad8cb9ed46da7455f8b6baed42a4a1d31">ft_destroy_table</a>(table);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  sqlite3_close(dbh);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="afort_8h_html_a06d9536a2e476d68f5055820535d3b34a2a0a31078eac88202029c3e9bdaa614a"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#a06d9536a2e476d68f5055820535d3b34a2a0a31078eac88202029c3e9bdaa614a">FT_ROW_HEADER</a></div><div class="ttdeci">@ FT_ROW_HEADER</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00848">fort.h:847</a></div></div>
+<div class="ttc" id="afort_8h_html_a10dc95b3d810a0ab2bf6c90b7b8c66a4"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#a10dc95b3d810a0ab2bf6c90b7b8c66a4">ft_set_cell_prop</a></div><div class="ttdeci">int ft_set_cell_prop(ft_table_t *table, size_t row, size_t col, uint32_t property, int value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/fort_8c_source.html#l03565">fort.c:3565</a></div></div>
+<div class="ttc" id="afort_8h_html_a18fe66b5bbb33d73be7ba06518c1f40d"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#a18fe66b5bbb33d73be7ba06518c1f40d">FT_ANY_ROW</a></div><div class="ttdeci">#define FT_ANY_ROW</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00767">fort.h:767</a></div></div>
+<div class="ttc" id="afort_8h_html_a3ce6dedcf688e310a3cfbb5cdae9d32cac43d09334b02f1300989a8789455183e"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#a3ce6dedcf688e310a3cfbb5cdae9d32cac43d09334b02f1300989a8789455183e">FT_ALIGNED_CENTER</a></div><div class="ttdeci">@ FT_ALIGNED_CENTER</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00838">fort.h:838</a></div></div>
+<div class="ttc" id="afort_8h_html_a4ebdb2eea82c8b8c3b80f0c7b7bf1536"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#a4ebdb2eea82c8b8c3b80f0c7b7bf1536">ft_write_ln</a></div><div class="ttdeci">#define ft_write_ln(table,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00514">fort.h:514</a></div></div>
+<div class="ttc" id="afort_8h_html_aaa966b7da0ee2e2d2a93dc6a5e1ef81b"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#aaa966b7da0ee2e2d2a93dc6a5e1ef81b">ft_set_border_style</a></div><div class="ttdeci">int ft_set_border_style(ft_table_t *table, const struct ft_border_style *style)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/fort_8c_source.html#l03551">fort.c:3551</a></div></div>
+<div class="ttc" id="afort_8h_html_aba499778dc3afcddfed50e79b0d97832"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#aba499778dc3afcddfed50e79b0d97832">ft_to_string</a></div><div class="ttdeci">const char * ft_to_string(const ft_table_t *table)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/fort_8c_source.html#l03405">fort.c:3405</a></div></div>
+<div class="ttc" id="afort_8h_html_abd5e4b5a6cb494024967f9d22a50c708"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#abd5e4b5a6cb494024967f9d22a50c708">FT_CPROP_ROW_TYPE</a></div><div class="ttdeci">#define FT_CPROP_ROW_TYPE</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00786">fort.h:786</a></div></div>
+<div class="ttc" id="afort_8h_html_ad5b6b32262309f37874d11369f47c7a5"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#ad5b6b32262309f37874d11369f47c7a5">FT_ANY_COLUMN</a></div><div class="ttdeci">#define FT_ANY_COLUMN</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00765">fort.h:765</a></div></div>
+<div class="ttc" id="afort_8h_html_ad8cb9ed46da7455f8b6baed42a4a1d31"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#ad8cb9ed46da7455f8b6baed42a4a1d31">ft_destroy_table</a></div><div class="ttdeci">void ft_destroy_table(ft_table_t *table)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/fort_8c_source.html#l02671">fort.c:2671</a></div></div>
+<div class="ttc" id="afort_8h_html_ae5586130d3dd258d477e370923d0889e"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#ae5586130d3dd258d477e370923d0889e">FT_CPROP_TEXT_ALIGN</a></div><div class="ttdeci">#define FT_CPROP_TEXT_ALIGN</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d2e/fort_8h_source.html#l00780">fort.h:780</a></div></div>
+<div class="ttc" id="afort_8h_html_af73fc78695a3009f5ff79a2c0d28c600"><div class="ttname"><a href="../../d4/d2e/fort_8h.html#af73fc78695a3009f5ff79a2c0d28c600">ft_create_table</a></div><div class="ttdeci">ft_table_t * ft_create_table(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/fort_8c_source.html#l02639">fort.c:2639</a></div></div>
+<div class="ttc" id="alist__emprunts_8h_html_a637ed376e54b3e743d50121103695065"><div class="ttname"><a href="../../df/d7b/list__emprunts_8h.html#a637ed376e54b3e743d50121103695065">list_emprunts</a></div><div class="ttdeci">void list_emprunts(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d83/list__emprunts_8c_source.html#l00041">list_emprunts.c:41</a></div></div>
+<div class="ttc" id="asqlite3__client_8h_html_a47d65c930f9eac8a7d8277affeba949b"><div class="ttname"><a href="../../dd/da3/sqlite3__client_8h.html#a47d65c930f9eac8a7d8277affeba949b">DB_FILE</a></div><div class="ttdeci">const char * DB_FILE</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dd6/sqlite3__client_8c_source.html#l00011">sqlite3_client.c:11</a></div></div>
+<div class="ttc" id="astructft__table_html"><div class="ttname"><a href="../../db/d22/structft__table.html">ft_table</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d68/fort_8c_source.html#l02231">fort.c:2231</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><b>list_emprunts.c</b></li>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+  </ul>
+</div>
+</body>
+</html>

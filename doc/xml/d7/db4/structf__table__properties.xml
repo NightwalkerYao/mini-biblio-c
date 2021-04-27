@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d7/db4/structf__table__properties" kind="struct" language="C++" prot="public">
+    <compoundname>f_table_properties</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/db4/structf__table__properties_1a58f57f6a9e9774a494bca8ec6cf1297e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="da/d6b/structfort__border__style" kindref="compound">fort_border_style</ref></type>
+        <definition>struct fort_border_style border_style</definition>
+        <argsstring></argsstring>
+        <name>border_style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2037" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2050" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/db4/structf__table__properties_1a1f691d257479bcdfd6f69c1e51b7e01f" prot="public" static="no" mutable="no">
+        <type><ref refid="d5/d27/structf__vector" kindref="compound">f_cell_prop_container_t</ref> *</type>
+        <definition>f_cell_prop_container_t* cell_properties</definition>
+        <argsstring></argsstring>
+        <name>cell_properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2051" column="29" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/db4/structf__table__properties_1a3481bfe08e80e699cabb779a5086e5d1" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d4a/structfort__entire__table__properties" kindref="compound">fort_entire_table_properties_t</ref></type>
+        <definition>fort_entire_table_properties_t entire_table_properties</definition>
+        <argsstring></argsstring>
+        <name>entire_table_properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2052" column="36" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2052" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>f_table_properties</label>
+        <link refid="d7/db4/structf__table__properties"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>border_style</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>cell_properties</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>entire_table_properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>f_vector</label>
+        <link refid="d5/d27/structf__vector"/>
+      </node>
+      <node id="2">
+        <label>fort_border_style</label>
+        <link refid="da/d6b/structfort__border__style"/>
+      </node>
+      <node id="4">
+        <label>fort_entire_table_properties</label>
+        <link refid="d3/d4a/structfort__entire__table__properties"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2049" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2049" bodyend="2053"/>
+    <listofallmembers>
+      <member refid="d7/db4/structf__table__properties_1a58f57f6a9e9774a494bca8ec6cf1297e" prot="public" virt="non-virtual"><scope>f_table_properties</scope><name>border_style</name></member>
+      <member refid="d7/db4/structf__table__properties_1a1f691d257479bcdfd6f69c1e51b7e01f" prot="public" virt="non-virtual"><scope>f_table_properties</scope><name>cell_properties</name></member>
+      <member refid="d7/db4/structf__table__properties_1a3481bfe08e80e699cabb779a5086e5d1" prot="public" virt="non-virtual"><scope>f_table_properties</scope><name>entire_table_properties</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

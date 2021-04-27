@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="da/d8e/structft__border__style" kind="struct" language="C++" prot="public">
+    <compoundname>ft_border_style</compoundname>
+    <includes refid="d4/d2e/fort_8h" local="no">fort.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/d8e/structft__border__style_1aa852ca2701f51131c00cda4835c83a9b" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="dd/d72/structft__border__chars" kindref="compound">ft_border_chars</ref></type>
+        <definition>struct ft_border_chars border_chs</definition>
+        <argsstring></argsstring>
+        <name>border_chs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="694" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/structft__border__style_1ac036a7ad3b97a4b829fe0406302197f8" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="dd/d72/structft__border__chars" kindref="compound">ft_border_chars</ref></type>
+        <definition>struct ft_border_chars header_border_chs</definition>
+        <argsstring></argsstring>
+        <name>header_border_chs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="694" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/structft__border__style_1a977dc73ea3a9d76cf2d3599bb94ff111" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* hor_separator_char</definition>
+        <argsstring></argsstring>
+        <name>hor_separator_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="703" column="16" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure describing border style. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>ft_border_chars</label>
+        <link refid="dd/d72/structft__border__chars"/>
+      </node>
+      <node id="1">
+        <label>ft_border_style</label>
+        <link refid="da/d8e/structft__border__style"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>border_chs</edgelabel>
+          <edgelabel>header_border_chs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" line="700" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/fort.h" bodystart="700" bodyend="704"/>
+    <listofallmembers>
+      <member refid="da/d8e/structft__border__style_1aa852ca2701f51131c00cda4835c83a9b" prot="public" virt="non-virtual"><scope>ft_border_style</scope><name>border_chs</name></member>
+      <member refid="da/d8e/structft__border__style_1ac036a7ad3b97a4b829fe0406302197f8" prot="public" virt="non-virtual"><scope>ft_border_style</scope><name>header_border_chs</name></member>
+      <member refid="da/d8e/structft__border__style_1a977dc73ea3a9d76cf2d3599bb94ff111" prot="public" virt="non-virtual"><scope>ft_border_style</scope><name>hor_separator_char</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

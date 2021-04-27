@@ -1,0 +1,5 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title="Le point d&#39;entrée de l&#39;application." alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node2" href="$d4/dbf/main_8h.html#a9ee2af8ed2e8265339991d0509a47991" title="Affichage de la bannière au lancement du programme." alt="" coords="122,5,173,32"/>
+<area shape="rect" id="node3" href="$d4/dbf/main_8h.html#aec14e29ffe62f1b971009f46e3b1d916" title="Affichage du menu principal du programme." alt="" coords="104,56,191,83"/>
+</map>

@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="df/d7b/list__emprunts_8h" kind="file" language="C++">
+    <compoundname>list_emprunts.h</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">sqlite3_client.h</includes>
+    <includes refid="d4/d2e/fort_8h" local="yes">fort.h</includes>
+    <includedby refid="d2/d83/list__emprunts_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c</includedby>
+    <includedby refid="d0/d29/main_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/main.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>fort.h</label>
+        <link refid="d4/d2e/fort_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h</label>
+        <link refid="df/d7b/list__emprunts_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>limits.h</label>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h</label>
+        <link refid="df/d7b/list__emprunts_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c</label>
+        <link refid="d2/d83/list__emprunts_8c_source"/>
+      </node>
+      <node id="3">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/main.c</label>
+        <link refid="d0/d29/main_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="df/d7b/list__emprunts_8h_1adf122296c5cf5816e18966e23e4ef4f8" prot="public" static="yes" mutable="no">
+        <type><ref refid="d4/d2e/fort_8h_1a6307d2840e0e96880c4d0f04b12a2187" kindref="member">ft_table_t</ref> *</type>
+        <definition>ft_table_t* table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" line="13" column="19" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d7b/list__emprunts_8h_1ab59f11ffafee2076945e4777447f90fd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int count_emprunts</definition>
+        <argsstring></argsstring>
+        <name>count_emprunts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" line="14" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="df/d7b/list__emprunts_8h_1aea1a05158a41c7152bf37e65aa7891e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int print_count_emprunts</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>print_count_emprunts</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0</para>
+</simplesect>
+Callback pour la requete de comptage des Emprunts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" line="27" column="12" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" declline="27" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d7b/list__emprunts_8h_1ae82b60cd32e72210d74abdca8d9592cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int print_emprunts</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>print_emprunts</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0</para>
+</simplesect>
+Callback pour la requete de selection et affichage des Emprunts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" line="40" column="12" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" declline="40" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d7b/list__emprunts_8h_1a637ed376e54b3e743d50121103695065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void list_emprunts</definition>
+        <argsstring>(void)</argsstring>
+        <name>list_emprunts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Affiche la liste des Emprunts de Livres </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" line="50" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="41" bodyend="68" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h" declline="50" declcolumn="6"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Les prototypes des fonctions qui affichent la liste des Emprunts de Livres. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para><ulink url="https://about.me/nightwalker.y">KOUASSI Yao Kan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/da3/sqlite3__client_8h" kindref="compound">sqlite3_client.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d2e/fort_8h" kindref="compound">fort.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="db/d22/structft__table" kindref="compound">ft_table_t</ref><sp/>*table;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count_emprunts;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>print_count_emprunts(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>print_emprunts(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d7b/list__emprunts_8h_1a637ed376e54b3e743d50121103695065" kindref="member">list_emprunts</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/list_emprunts.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d5/d27/structf__vector" kind="struct" language="C++" prot="public">
+    <compoundname>f_vector</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/d27/structf__vector_1a0dc3c363255f193681c77b4d2a82e995" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7229" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d27/structf__vector_1af94888500189e64dce0a95c5b3665c7d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* m_data</definition>
+        <argsstring></argsstring>
+        <name>m_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7230" column="11" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d27/structf__vector_1a5deef5114ecf92bcf952bd0b30d7ba16" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t m_capacity</definition>
+        <argsstring></argsstring>
+        <name>m_capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7231" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d27/structf__vector_1ab2559204e1d28e969ce23b6e3947cd37" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t m_item_size</definition>
+        <argsstring></argsstring>
+        <name>m_item_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7232" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="7228" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="7228" bodyend="7233"/>
+    <listofallmembers>
+      <member refid="d5/d27/structf__vector_1a5deef5114ecf92bcf952bd0b30d7ba16" prot="public" virt="non-virtual"><scope>f_vector</scope><name>m_capacity</name></member>
+      <member refid="d5/d27/structf__vector_1af94888500189e64dce0a95c5b3665c7d" prot="public" virt="non-virtual"><scope>f_vector</scope><name>m_data</name></member>
+      <member refid="d5/d27/structf__vector_1ab2559204e1d28e969ce23b6e3947cd37" prot="public" virt="non-virtual"><scope>f_vector</scope><name>m_item_size</name></member>
+      <member refid="d5/d27/structf__vector_1a0dc3c363255f193681c77b4d2a82e995" prot="public" virt="non-virtual"><scope>f_vector</scope><name>m_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

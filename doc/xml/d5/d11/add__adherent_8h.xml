@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d5/d11/add__adherent_8h" kind="file" language="C++">
+    <compoundname>add_adherent.h</compoundname>
+    <includes local="no">sqlite3.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">sqlite3_client.h</includes>
+    <includedby refid="d4/d28/add__adherent_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c</includedby>
+    <includedby refid="d0/d29/main_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h</label>
+        <link refid="d5/d11/add__adherent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>sqlite3.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h</label>
+        <link refid="d5/d11/add__adherent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c</label>
+        <link refid="d4/d28/add__adherent_8c_source"/>
+      </node>
+      <node id="3">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/main.c</label>
+        <link refid="d0/d29/main_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d11/add__adherent_8h_1ae5029c6714b7b77296aa2096b846b6be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Callback exécutée à la requête d&apos;ajout</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>NotUsed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>void * </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>argc </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>azColName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h" line="20" column="12" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h" declline="20" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d11/add__adherent_8h_1afec6cd4c037f3957b0d69255294b34d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add_adherent</definition>
+        <argsstring>(void)</argsstring>
+        <name>add_adherent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ajoute un nouvel Adherent à la base de données en demandant ses infos de façon interactive</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h" line="29" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" bodystart="15" bodyend="49" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h" declline="29" declcolumn="6"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" compoundref="d4/dd6/sqlite3__client_8c" startline="13" endline="20">clear_buffer</references>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Les prototypes des fonctions qui gèrent l&apos;ajout d&apos;un nouvel Adhérent. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para><ulink url="https://about.me/nightwalker.y">KOUASSI Yao Kan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="dd/da3/sqlite3__client_8h" kindref="compound">sqlite3_client.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d11/add__adherent_8h_1afec6cd4c037f3957b0d69255294b34d2" kindref="member">add_adherent</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/add_adherent.h"/>
+  </compounddef>
+</doxygen>

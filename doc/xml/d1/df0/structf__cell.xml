@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d1/df0/structf__cell" kind="struct" language="C++" prot="public">
+    <compoundname>f_cell</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/df0/structf__cell_1a3a1b8ca7bc50fff05b35ecd6c553f50b" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/da0/structf__string__buffer" kindref="compound">f_string_buffer_t</ref> *</type>
+        <definition>f_string_buffer_t* str_buffer</definition>
+        <argsstring></argsstring>
+        <name>str_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2298" column="23" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d1/df0/structf__cell_1a61e2cf70f19a7f46953dd989f934d2b5" prot="public" static="no" mutable="no">
+        <type>enum f_cell_type</type>
+        <definition>enum f_cell_type cell_type</definition>
+        <argsstring></argsstring>
+        <name>cell_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2298" column="23" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>f_cell</label>
+        <link refid="d1/df0/structf__cell"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>str_buffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>f_string_buffer</label>
+        <link refid="d9/da0/structf__string__buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2297" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2297" bodyend="2300"/>
+    <listofallmembers>
+      <member refid="d1/df0/structf__cell_1a61e2cf70f19a7f46953dd989f934d2b5" prot="public" virt="non-virtual"><scope>f_cell</scope><name>cell_type</name></member>
+      <member refid="d1/df0/structf__cell_1a3a1b8ca7bc50fff05b35ecd6c553f50b" prot="public" virt="non-virtual"><scope>f_cell</scope><name>str_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

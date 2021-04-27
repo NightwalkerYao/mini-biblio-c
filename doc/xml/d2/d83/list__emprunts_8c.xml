@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d2/d83/list__emprunts_8c" kind="file" language="C++">
+    <compoundname>list_emprunts.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">../inc/sqlite3_client.h</includes>
+    <includes refid="d4/d2e/fort_8h" local="yes">../inc/fort.h</includes>
+    <includes refid="df/d7b/list__emprunts_8h" local="yes">../inc/list_emprunts.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>../inc/fort.h</label>
+        <link refid="d4/d2e/fort_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>../inc/list_emprunts.h</label>
+        <link refid="df/d7b/list__emprunts_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../inc/sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c</label>
+        <link refid="d2/d83/list__emprunts_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>limits.h</label>
+      </node>
+      <node id="4">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="8">
+        <label>stddef.h</label>
+      </node>
+      <node id="9">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d2/d83/list__emprunts_8c_1a1f63fdf577beb6edeadb6b31eb655364" prot="public" static="no">
+        <name>_LIST_EMPRUNTS_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" line="10" column="9" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d2/d83/list__emprunts_8c_1adf122296c5cf5816e18966e23e4ef4f8" prot="public" static="yes" mutable="no">
+        <type><ref refid="d4/d2e/fort_8h_1a6307d2840e0e96880c4d0f04b12a2187" kindref="member">ft_table_t</ref> *</type>
+        <definition>ft_table_t* table</definition>
+        <argsstring></argsstring>
+        <name>table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" line="12" column="19" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d83/list__emprunts_8c_1ab59f11ffafee2076945e4777447f90fd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int count_emprunts</definition>
+        <argsstring></argsstring>
+        <name>count_emprunts</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" line="13" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d83/list__emprunts_8c_1aea1a05158a41c7152bf37e65aa7891e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int print_count_emprunts</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>print_count_emprunts</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" line="15" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="15" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d83/list__emprunts_8c_1ae82b60cd32e72210d74abdca8d9592cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int print_emprunts</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>print_emprunts</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" line="31" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="31" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d83/list__emprunts_8c_1aae532efa95284c4e4fa30ae551858468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void list_emprunts</definition>
+        <argsstring>()</argsstring>
+        <name>list_emprunts</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para>
+</simplesect>
+Affiche la liste des Emprunts de Livres </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" line="41" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c" bodystart="41" bodyend="68"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/sqlite3_client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/fort.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/list_emprunts.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LIST_EMPRUNTS_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LIST_EMPRUNTS_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="db/d22/structft__table" kindref="compound">ft_table_t</ref><sp/>*table;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count_emprunts<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>print_count_emprunts(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>count_emprunts<sp/>=<sp/>atoi(argv[0]);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count_emprunts<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>table<sp/>=<sp/><ref refid="d4/d2e/fort_8h_1af73fc78695a3009f5ff79a2c0d28c600" kindref="member">ft_create_table</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Change<sp/>border<sp/>style<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1aaa966b7da0ee2e2d2a93dc6a5e1ef81b" kindref="member">ft_set_border_style</ref>(table,<sp/>FT_DOUBLE2_STYLE);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>&quot;header&quot;<sp/>type<sp/>for<sp/>the<sp/>first<sp/>row<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1a10dc95b3d810a0ab2bf6c90b7b8c66a4" kindref="member">ft_set_cell_prop</ref>(table,<sp/>0,<sp/><ref refid="d4/d2e/fort_8h_1ad5b6b32262309f37874d11369f47c7a5" kindref="member">FT_ANY_COLUMN</ref>,<sp/><ref refid="d4/d2e/fort_8h_1abd5e4b5a6cb494024967f9d22a50c708" kindref="member">FT_CPROP_ROW_TYPE</ref>,<sp/><ref refid="d4/d2e/fort_8h_1a06d9536a2e476d68f5055820535d3b34a2a0a31078eac88202029c3e9bdaa614a" kindref="member">FT_ROW_HEADER</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1a4ebdb2eea82c8b8c3b80f0c7b7bf1536" kindref="member">ft_write_ln</ref>(table,<sp/></highlight><highlight class="stringliteral">&quot;ADHERENT&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;LIVRE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;AUTEUR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DATE<sp/>DE<sp/>SORTIE&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DATE<sp/>DE<sp/>RETOUR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ETAT&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[1m<sp/>Il<sp/>n&apos;y<sp/>a<sp/>aucun<sp/>Emprunt<sp/>pour<sp/>le<sp/>moment.\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>print_emprunts(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>id_adherent<sp/>0,<sp/>id_livre<sp/>1,<sp/>date_sortie<sp/>2,<sp/>date_retour<sp/>3,<sp/>etat<sp/>4,<sp/>nom_adherent<sp/>5,<sp/>titre_livre<sp/>6,<sp/>auteur_livre<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(strcmp(argv[4],<sp/></highlight><highlight class="stringliteral">&quot;emprunte&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>ft_u8printf_ln(table,<sp/></highlight><highlight class="stringliteral">&quot;[%s]%s|[%s]%s|%s|%s|%s|%s&quot;</highlight><highlight class="normal">,<sp/>argv[0],<sp/>argv[5],<sp/>argv[1],<sp/>argv[6],<sp/>argv[7],<sp/>argv[2],<sp/>argv[3],<sp/></highlight><highlight class="stringliteral">&quot;Non<sp/>Rendu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>ft_u8printf_ln(table,<sp/></highlight><highlight class="stringliteral">&quot;[%s]%s|[%s]%s|%s|%s|%s|%s&quot;</highlight><highlight class="normal">,<sp/>argv[0],<sp/>argv[5],<sp/>argv[1],<sp/>argv[6],<sp/>argv[7],<sp/>argv[2],<sp/>argv[3],<sp/></highlight><highlight class="stringliteral">&quot;Rendu&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="df/d7b/list__emprunts_8h_1a637ed376e54b3e743d50121103695065" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d7b/list__emprunts_8h_1a637ed376e54b3e743d50121103695065" kindref="member">list_emprunts</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>sqlite3<sp/>*dbh;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ErrMsg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>con;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_open(<ref refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>,<sp/>&amp;dbh);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(con)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQLite3<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>sqlite3_errmsg(dbh));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>Query_0<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>COUNT(*)<sp/>AS<sp/>nb<sp/>FROM<sp/>adherents_livres;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query_0,<sp/>print_count_emprunts,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>Query<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SELECT<sp/>al.id_adherent<sp/>AS<sp/>id_adherent,<sp/>al.id_livre<sp/>AS<sp/>id_livre,<sp/>al.date_sortie<sp/>AS<sp/>date_sortie,<sp/>REPLACE(al.date_retour,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>date_retour,<sp/>REPLACE(al.etat,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>etat,<sp/>REPLACE(a.nom,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>nom_adherent,<sp/>REPLACE(l.titre,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>titre_livre,<sp/>REPLACE(l.auteur,<sp/>CHAR(10),<sp/>&apos;&apos;)<sp/>AS<sp/>auteur_livre<sp/>FROM<sp/>adherents_livres<sp/>al<sp/>LEFT<sp/>JOIN<sp/>adherents<sp/>a<sp/>ON<sp/>al.id_adherent=a.id<sp/>LEFT<sp/>JOIN<sp/>livres<sp/>l<sp/>ON<sp/>al.id_livre=l.id<sp/>ORDER<sp/>BY<sp/>al.date_sortie<sp/>ASC;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>print_emprunts,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count_emprunts<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1a10dc95b3d810a0ab2bf6c90b7b8c66a4" kindref="member">ft_set_cell_prop</ref>(table,<sp/><ref refid="d4/d2e/fort_8h_1a18fe66b5bbb33d73be7ba06518c1f40d" kindref="member">FT_ANY_ROW</ref>,<sp/>6,<sp/><ref refid="d4/d2e/fort_8h_1ae5586130d3dd258d477e370923d0889e" kindref="member">FT_CPROP_TEXT_ALIGN</ref>,<sp/><ref refid="d4/d2e/fort_8h_1a3ce6dedcf688e310a3cfbb5cdae9d32cac43d09334b02f1300989a8789455183e" kindref="member">FT_ALIGNED_CENTER</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="d4/d2e/fort_8h_1aba499778dc3afcddfed50e79b0d97832" kindref="member">ft_to_string</ref>(table));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d2e/fort_8h_1ad8cb9ed46da7455f8b6baed42a4a1d31" kindref="member">ft_destroy_table</ref>(table);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>sqlite3_close(dbh);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/list_emprunts.c"/>
+  </compounddef>
+</doxygen>

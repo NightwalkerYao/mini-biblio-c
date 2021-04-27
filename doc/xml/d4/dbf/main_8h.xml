@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d4/dbf/main_8h" kind="file" language="C++">
+    <compoundname>main.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includedby refid="d0/d29/main_8c" local="yes">/home/nightwalker/Class/C_Adv/biblio/lib/main.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/main.h</label>
+        <link refid="d4/dbf/main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/inc/main.h</label>
+        <link refid="d4/dbf/main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/main.c</label>
+        <link refid="d0/d29/main_8c_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/dbf/main_8h_1a9ee2af8ed2e8265339991d0509a47991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int figlet</definition>
+        <argsstring>(void)</argsstring>
+        <name>figlet</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Affichage de la bannière au lancement du programme. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Affiche un figlet (bannière) au démarrage du programme</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/main.h" line="22" column="5" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/main.c" bodystart="24" bodyend="35" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/main.h" declline="22" declcolumn="5"/>
+        <referencedby refid="d4/dbf/main_8h_1ae0665038b72011f5c680c660fcb59459" compoundref="d0/d29/main_8c" startline="62" endline="155">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbf/main_8h_1aec14e29ffe62f1b971009f46e3b1d916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int print_menu</definition>
+        <argsstring>(void)</argsstring>
+        <name>print_menu</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Affichage du menu principal du programme. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int 0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/main.h" line="30" column="5" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/main.c" bodystart="38" bodyend="59" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/main.h" declline="30" declcolumn="5"/>
+        <referencedby refid="d4/dbf/main_8h_1ae0665038b72011f5c680c660fcb59459" compoundref="d0/d29/main_8c" startline="62" endline="155">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d4/dbf/main_8h_1ae0665038b72011f5c680c660fcb59459" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Le point d&apos;entrée de l&apos;application. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Présente l&apos;application et gère les actions de l&apos;utilisateur</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>argc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int Le nombre d&apos;arguments+1 fournits à l&apos;appel en ligne de commande </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>argv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>char** La liste des arguments fournits à l&apos;appel en ligne de commande </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/inc/main.h" line="42" column="5" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/main.c" bodystart="62" bodyend="155" declfile="/home/nightwalker/Class/C_Adv/biblio/inc/main.h" declline="42" declcolumn="5"/>
+        <references refid="d4/dbf/main_8h_1a9ee2af8ed2e8265339991d0509a47991" compoundref="d0/d29/main_8c" startline="24" endline="35">figlet</references>
+        <references refid="d4/dbf/main_8h_1aec14e29ffe62f1b971009f46e3b1d916" compoundref="d0/d29/main_8c" startline="38" endline="59">print_menu</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Les prototypes des fonctions du point d&apos;entrée du programme. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="author"><para><ulink url="https://about.me/nightwalker.y">KOUASSI Yao Kan</ulink> </para>
+</simplesect>
+<simplesect kind="date"><para>25 Avril 2021</para>
+</simplesect>
+Contient les prototypes des fonctions du <ref refid="d0/d29/main_8c_source" kindref="compound">lib/main.c</ref> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d4/dbf/main_8h_1a9ee2af8ed2e8265339991d0509a47991" kindref="member">figlet</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d4/dbf/main_8h_1aec14e29ffe62f1b971009f46e3b1d916" kindref="member">print_menu</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="d4/dbf/main_8h_1ae0665038b72011f5c680c660fcb59459" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>argv[]);</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/inc/main.h"/>
+  </compounddef>
+</doxygen>

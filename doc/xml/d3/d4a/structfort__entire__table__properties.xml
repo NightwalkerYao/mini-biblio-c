@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d3/d4a/structfort__entire__table__properties" kind="struct" language="C++" prot="public">
+    <compoundname>fort_entire_table_properties</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d4a/structfort__entire__table__properties_1a87484e19e9dff2efeabfbbcfdc0c0f80" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int left_margin</definition>
+        <argsstring></argsstring>
+        <name>left_margin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2034" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2034" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4a/structfort__entire__table__properties_1aae43b762bb8a8ee14752f7a1056f85de" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int top_margin</definition>
+        <argsstring></argsstring>
+        <name>top_margin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2035" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2035" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4a/structfort__entire__table__properties_1a3d505e3f1169ea3f86ecf36aefe24be3" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int right_margin</definition>
+        <argsstring></argsstring>
+        <name>right_margin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2036" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2036" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4a/structfort__entire__table__properties_1aa80ec529af79ff50c442c24c505f512a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int bottom_margin</definition>
+        <argsstring></argsstring>
+        <name>bottom_margin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2037" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2037" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d4a/structfort__entire__table__properties_1a18b0b5e9a876a787e08d7f630d52152d" prot="public" static="no" mutable="no">
+        <type>enum <ref refid="d4/d2e/fort_8h_1aeed2958a1823084ca6e71883b075baa5" kindref="member">ft_adding_strategy</ref></type>
+        <definition>enum ft_adding_strategy add_strategy</definition>
+        <argsstring></argsstring>
+        <name>add_strategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2037" column="18" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2038" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="2033" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="2033" bodyend="2039"/>
+    <listofallmembers>
+      <member refid="d3/d4a/structfort__entire__table__properties_1a18b0b5e9a876a787e08d7f630d52152d" prot="public" virt="non-virtual"><scope>fort_entire_table_properties</scope><name>add_strategy</name></member>
+      <member refid="d3/d4a/structfort__entire__table__properties_1aa80ec529af79ff50c442c24c505f512a" prot="public" virt="non-virtual"><scope>fort_entire_table_properties</scope><name>bottom_margin</name></member>
+      <member refid="d3/d4a/structfort__entire__table__properties_1a87484e19e9dff2efeabfbbcfdc0c0f80" prot="public" virt="non-virtual"><scope>fort_entire_table_properties</scope><name>left_margin</name></member>
+      <member refid="d3/d4a/structfort__entire__table__properties_1a3d505e3f1169ea3f86ecf36aefe24be3" prot="public" virt="non-virtual"><scope>fort_entire_table_properties</scope><name>right_margin</name></member>
+      <member refid="d3/d4a/structfort__entire__table__properties_1aae43b762bb8a8ee14752f7a1056f85de" prot="public" virt="non-virtual"><scope>fort_entire_table_properties</scope><name>top_margin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

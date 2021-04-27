@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d0/da7/structf__separator" kind="struct" language="C++" prot="public">
+    <compoundname>f_separator</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/da7/structf__separator_1a03e6cca0c879c0443efb431c30c14f76" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="164" column="9" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" line="163" column="1" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/fort.c" bodystart="163" bodyend="165"/>
+    <listofallmembers>
+      <member refid="d0/da7/structf__separator_1a03e6cca0c879c0443efb431c30c14f76" prot="public" virt="non-virtual"><scope>f_separator</scope><name>enabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

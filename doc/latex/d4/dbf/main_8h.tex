@@ -1,0 +1,148 @@
+\hypertarget{main_8h}{}\doxysection{Référence du fichier /home/nightwalker/\+Class/\+C\+\_\+\+Adv/biblio/inc/main.h}
+\label{main_8h}\index{/home/nightwalker/Class/C\_Adv/biblio/inc/main.h@{/home/nightwalker/Class/C\_Adv/biblio/inc/main.h}}
+
+
+Les prototypes des fonctions du point d\textquotesingle{}entrée du programme.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$sqlite3.\+h$>$}\newline
+Graphe des dépendances par inclusion de main.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{d3/df8/main_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{db/d87/main_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8h_a9ee2af8ed2e8265339991d0509a47991}{figlet}} (void)
+\begin{DoxyCompactList}\small\item\em Affichage de la bannière au lancement du programme. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8h_aec14e29ffe62f1b971009f46e3b1d916}{print\+\_\+menu}} (void)
+\begin{DoxyCompactList}\small\item\em Affichage du menu principal du programme. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8h_ae0665038b72011f5c680c660fcb59459}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Le point d\textquotesingle{}entrée de l\textquotesingle{}application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Les prototypes des fonctions du point d\textquotesingle{}entrée du programme. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{Auteur}
+\href{https://about.me/nightwalker.y}{\texttt{ KOUASSI Yao Kan}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+25 Avril 2021
+\end{DoxyDate}
+Contient les prototypes des fonctions du \mbox{\hyperlink{main_8c_source}{lib/main.\+c}} 
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{main_8h_a9ee2af8ed2e8265339991d0509a47991}\label{main_8h_a9ee2af8ed2e8265339991d0509a47991}} 
+\index{main.h@{main.h}!figlet@{figlet}}
+\index{figlet@{figlet}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{figlet()}{figlet()}}
+{\footnotesize\ttfamily int figlet (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Affichage de la bannière au lancement du programme. 
+
+Affiche un figlet (bannière) au démarrage du programme
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 0 
+\end{DoxyReturn}
+
+
+Définition à la ligne 24 du fichier main.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{d4/dbf/main_8h_a9ee2af8ed2e8265339991d0509a47991_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8h_ae0665038b72011f5c680c660fcb59459}\label{main_8h_ae0665038b72011f5c680c660fcb59459}} 
+\index{main.h@{main.h}!main@{main}}
+\index{main@{main}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Le point d\textquotesingle{}entrée de l\textquotesingle{}application. 
+
+Présente l\textquotesingle{}application et gère les actions de l\textquotesingle{}utilisateur
+
+
+\begin{DoxyParams}{Paramètres}
+{\em argc} & int Le nombre d\textquotesingle{}arguments+1 fournits à l\textquotesingle{}appel en ligne de commande \\
+\hline
+{\em argv} & char$\ast$$\ast$ La liste des arguments fournits à l\textquotesingle{}appel en ligne de commande \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 
+\end{DoxyReturn}
+
+
+Définition à la ligne 62 du fichier main.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{d4/dbf/main_8h_ae0665038b72011f5c680c660fcb59459_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8h_aec14e29ffe62f1b971009f46e3b1d916}\label{main_8h_aec14e29ffe62f1b971009f46e3b1d916}} 
+\index{main.h@{main.h}!print\_menu@{print\_menu}}
+\index{print\_menu@{print\_menu}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{print\_menu()}{print\_menu()}}
+{\footnotesize\ttfamily int print\+\_\+menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Affichage du menu principal du programme. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+int 0 
+\end{DoxyReturn}
+
+
+Définition à la ligne 38 du fichier main.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{d4/dbf/main_8h_aec14e29ffe62f1b971009f46e3b1d916_icgraph}
+\end{center}
+\end{figure}

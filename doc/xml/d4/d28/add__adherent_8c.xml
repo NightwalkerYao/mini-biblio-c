@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="fr">
+  <compounddef id="d4/d28/add__adherent_8c" kind="file" language="C++">
+    <compoundname>add_adherent.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">sqlite3.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="dd/da3/sqlite3__client_8h" local="yes">../inc/sqlite3_client.h</includes>
+    <includes refid="d5/d11/add__adherent_8h" local="yes">../inc/add_adherent.h</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>../inc/add_adherent.h</label>
+        <link refid="d5/d11/add__adherent_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../inc/sqlite3_client.h</label>
+        <link refid="dd/da3/sqlite3__client_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c</label>
+        <link refid="d4/d28/add__adherent_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sqlite3.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d4/d28/add__adherent_8c_1a652cf31adeed369658b3097d39828063" prot="public" static="no">
+        <name>_ADD_ADHERENT_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" line="9" column="9" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/d28/add__adherent_8c_1ae5029c6714b7b77296aa2096b846b6be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int callback</definition>
+        <argsstring>(void *NotUsed, int argc, char **argv, char **azColName)</argsstring>
+        <name>callback</name>
+        <param>
+          <type>void *</type>
+          <declname>NotUsed</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>azColName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" line="11" column="12" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="d4/d28/add__adherent_8c_1a041b37be4c15e3ddb0168c8a9cca884f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void add_adherent</definition>
+        <argsstring>()</argsstring>
+        <name>add_adherent</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Ajoute un nouvel Adherent à la base de données en demandant ses infos de façon interactive</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>void</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" line="15" column="6" bodyfile="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c" bodystart="15" bodyend="49"/>
+        <references refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" compoundref="d4/dd6/sqlite3__client_8c" startline="13" endline="20">clear_buffer</references>
+        <references refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" compoundref="d4/dd6/sqlite3__client_8c" startline="11">DB_FILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sqlite3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/sqlite3_client.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../inc/add_adherent.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_ADD_ADHERENT_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ADD_ADHERENT_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callback(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*NotUsed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**azColName)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d5/d11/add__adherent_8h_1afec6cd4c037f3957b0d69255294b34d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d5/d11/add__adherent_8h_1afec6cd4c037f3957b0d69255294b34d2" kindref="member">add_adherent</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>nom[100];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>contact[100];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>adresse[100];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>sqlite3<sp/>*dbh;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ErrMsg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>con;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrez<sp/>le<sp/>\033[1mNom<sp/>et<sp/>le<sp/>Prénom\033[0m<sp/>:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>fgets(nom,<sp/>99,<sp/>stdin);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" kindref="member">clear_buffer</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrez<sp/>le<sp/>\033[1mContact\033[0m<sp/>:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>fgets(contact,<sp/>99,<sp/>stdin);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><ref refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" kindref="member">clear_buffer</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrez<sp/>l&apos;\033[1mAdresse\033[0m<sp/>:<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>fgets(adresse,<sp/>99,<sp/>stdin);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="dd/da3/sqlite3__client_8h_1a876d5723d0511f25736dcd24ef3fd437" kindref="member">clear_buffer</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_open(<ref refid="dd/da3/sqlite3__client_8h_1a47d65c930f9eac8a7d8277affeba949b" kindref="member">DB_FILE</ref>,<sp/>&amp;dbh);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(con)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQLite3<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>sqlite3_errmsg(dbh));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>Query[500];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>sprintf(Query,<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>adherents(id,<sp/>nom,<sp/>contact,<sp/>adresse)<sp/>VALUES(NULL,<sp/>&apos;%s&apos;,<sp/>&apos;%s&apos;,<sp/>&apos;%s&apos;);&quot;</highlight><highlight class="normal">,<sp/>nom,<sp/>contact,<sp/>adresse);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>printf(&quot;Query<sp/>:<sp/>%s\n&quot;,<sp/>Query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>con<sp/>=<sp/>sqlite3_exec(dbh,<sp/>Query,<sp/>callback,<sp/>0,<sp/>&amp;ErrMsg);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>con<sp/>!=<sp/>SQLITE_OK<sp/>){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;\033[31mErreur<sp/>SQL<sp/>::<sp/>\033[1m%s\033[0m\n&quot;</highlight><highlight class="normal">,<sp/>ErrMsg);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>sqlite3_free(ErrMsg);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stdout,<sp/></highlight><highlight class="stringliteral">&quot;\033[32mL&apos;Adhérent<sp/>a<sp/>été<sp/>ajouté<sp/>avec<sp/>succès<sp/>!\033[0m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>sqlite3_close(dbh);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/nightwalker/Class/C_Adv/biblio/lib/add_adherent.c"/>
+  </compounddef>
+</doxygen>
